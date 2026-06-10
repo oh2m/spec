@@ -1,0 +1,728 @@
+pattern: 3
+domain: Musculoskeletal
+spec_version: 0.1.1
+status: DRAFT
+authored_by: jamal
+last_revised: 2026-04-30
+polarity_note: "V flag inverts bit storage; question text is never inverted. See spec for details."
+ratification: pending community review
+scope_exclusions:
+  - "acute trauma emergency room details"
+  - "active bone cancers"
+
+questions:
+
+  # ---- Joint Conditions ----
+  - pos: 1
+    q: "Have you been diagnosed with osteoarthritis in your knee(s) by a healthcare professional?"
+  - pos: 2
+    q: "Have you been diagnosed with osteoarthritis in your hip(s) by a healthcare professional?"
+  - pos: 3
+    q: "Have you been diagnosed with osteoarthritis in your hands or fingers by a healthcare professional?"
+  - pos: 4
+    q: "Have you been diagnosed with osteoarthritis in your spine by a healthcare professional?"
+  - pos: 5
+    q: "Have you been diagnosed with rheumatoid arthritis by a healthcare professional?"
+  - pos: 6
+    q: "Have you been diagnosed with psoriatic arthritis by a healthcare professional?"
+  - pos: 7
+    q: "Have you been diagnosed with ankylosing spondylitis by a healthcare professional?"
+  - pos: 8
+    q: "Have you been diagnosed with gout by a healthcare professional?"
+  - pos: 9
+    q: "Have you been diagnosed with joint hypermobility spectrum disorder (HSD) by a healthcare professional?"
+  - pos: 10
+    q: "Have you been diagnosed with joint hypermobility syndrome by a healthcare professional?"
+  - pos: 11
+    q: "Have you been diagnosed with lupus (systemic lupus erythematosus) affecting joints by a healthcare professional?"
+  - pos: 12
+    q: "Have you been diagnosed with juvenile idiopathic arthritis by a healthcare professional?"
+  - pos: 13
+    q: "Have you been diagnosed with reactive arthritis by a healthcare professional?"
+  - pos: 14
+    q: "Have you been diagnosed with bursitis in your shoulder, hip, or elbow by a healthcare professional?"
+  - pos: 15
+    q: "Have you been diagnosed with tendonitis in your shoulder, elbow, or heel by a healthcare professional?"
+  - pos: 16
+    q: "Have you been diagnosed with frozen shoulder (adhesive capsulitis) by a healthcare professional?"
+  - pos: 17
+    q: "Have you been diagnosed with temporomandibular joint (TMJ) disorder by a healthcare professional?"
+
+  # ---- Spine ----
+  - pos: 18
+    q: "Have you been diagnosed with herniated, bulging, or slipped disc by a healthcare professional?"
+  - pos: 19
+    q: "Have you been diagnosed with scoliosis (curvature of the spine) by a healthcare professional?"
+  - pos: 20
+    q: "Have you been diagnosed with spinal stenosis (narrowed spinal canal) by a healthcare professional?"
+  - pos: 21
+    q: "Have you been diagnosed with spondylolisthesis (slipped vertebra) by a healthcare professional?"
+  - pos: 22
+    q: "Have you been diagnosed with spinal osteoarthritis or degenerative disc disease by a healthcare professional?"
+  - pos: 23
+    q: "Do you currently experience sciatica (radiating nerve pain in leg)?"
+  - pos: 24
+    q: "Have you been diagnosed with cervical radiculopathy (pinched nerve in neck) by a healthcare professional?"
+  - pos: 25
+    q: "Do you currently experience chronic low back pain lasting more than 3 months?"
+  - pos: 26
+    q: "Do you currently experience chronic neck pain lasting more than 3 months?"
+  - pos: 27
+    q: "Have you ever had back surgery of any kind?"
+  - pos: 28
+    q: "Have you ever had spinal fusion surgery?"
+  - pos: 29
+    q: "Have you ever had a laminectomy or discectomy?"
+
+  # ---- Bone ----
+  - pos: 30
+    q: "Have you been diagnosed with osteoporosis (weak, brittle bones) by a healthcare professional?"
+  - pos: 31
+    q: "Have you been diagnosed with osteopenia (low bone density) by a healthcare professional?"
+  - pos: 32
+    q: "Have you ever had a fragility fracture (bone broken from a minor fall/bump)?"
+  - pos: 33
+    q: "Have you been diagnosed with Paget's disease of bone by a healthcare professional?"
+  - pos: 34
+    q: "Are you currently taking a bisphosphonate medication (such as alendronate, zoledronic acid)?"
+  - pos: 35
+    q: "Are you currently taking other bone-density medication (such as denosumab, teriparatide)?"
+  - pos: 36
+    q: "Have you had a DEXA (bone density) scan in the past 5 years?"
+    v: true
+
+  # ---- Muscle ----
+  - pos: 37
+    q: "Have you been diagnosed with fibromyalgia by a healthcare professional?"
+  - pos: 38
+    q: "Have you been diagnosed with myositis or other inflammatory muscle disease by a healthcare professional?"
+  - pos: 39
+    q: "Have you been diagnosed with muscular dystrophy by a healthcare professional?"
+  - pos: 40
+    q: "Have you been diagnosed with rhabdomyolysis by a healthcare professional?"
+  - pos: 41
+    q: "Have you been diagnosed with sarcopenia (significant loss of muscle mass and strength) by a healthcare professional?"
+  - pos: 42
+    q: "Have you been diagnosed with chronic muscle pain or myofascial pain syndrome by a healthcare professional?"
+
+  # ---- Acute and Recent Injury ----
+  - pos: 43
+    q: "Have you experienced a bone fracture in the past 12 months?"
+  - pos: 44
+    q: "Have you experienced a joint dislocation in the past 12 months?"
+  - pos: 45
+    q: "Have you experienced a severe ligament sprain (grade 2 or 3, like an ankle or knee sprain) in the past 12 months?"
+  - pos: 46
+    q: "Have you experienced a severe muscle strain or tear in the past 12 months?"
+  - pos: 47
+    q: "Have you experienced a tendon rupture (such as Achilles or rotator cuff) in the past 12 months?"
+  - pos: 48
+    q: "Have you experienced a sports injury requiring medical attention or imaging in the past 12 months?"
+  - pos: 49
+    q: "Have you experienced a concussion or head injury in the past 12 months?"
+  - pos: 50
+    q: "Have you experienced a whiplash injury to your neck in the past 12 months?"
+
+  # ---- Surgical History ----
+  - pos: 51
+    q: "Have you ever had a total knee replacement?"
+  - pos: 52
+    q: "Have you ever had a partial knee replacement?"
+  - pos: 53
+    q: "Have you ever had a total hip replacement?"
+  - pos: 54
+    q: "Have you ever had a shoulder replacement?"
+  - pos: 55
+    q: "Have you ever had a ACL reconstruction surgery?"
+  - pos: 56
+    q: "Have you ever had a meniscus repair or meniscectomy surgery?"
+  - pos: 57
+    q: "Have you ever had a rotator cuff repair surgery?"
+  - pos: 58
+    q: "Have you ever had a carpal tunnel release surgery?"
+  - pos: 59
+    q: "Have you ever had a arthroscopic surgery on any joint?"
+  - pos: 60
+    q: "Have you ever had a bunion surgery (bunionectomy)?"
+  - pos: 61
+    q: "Have you ever had a fracture repair surgery with plates, screws, or rods?"
+
+  # ---- Mobility and Functional Status ----
+  - pos: 62
+    q: "Do you regularly use a mobility aid (such as a cane, walker, crutches, or wheelchair)?"
+  - pos: 63
+    q: "Do you experience chronic musculoskeletal pain that limits your ability to perform daily activities?"
+  - pos: 64
+    q: "Do you have a limited range of motion in any major joint that affects your daily life?"
+  - pos: 65
+    q: "Do you experience difficulty standing up from a standard chair without using your arms?"
+  - pos: 66
+    q: "Do you experience difficulty climbing a flight of stairs due to joint or muscle pain?"
+  - pos: 67
+    q: "Do you experience difficulty walking 100 yards without resting due to joint or muscle pain?"
+  - pos: 68
+    q: "Do you experience difficulty bending down to tie your shoes or pick up items from the floor?"
+  - pos: 69
+    q: "Do you experience difficulty reaching overhead to grab items from a shelf?"
+  - pos: 70
+    q: "Do you experience difficulty carrying items weighing over 10 pounds due to joint or neck pain?"
+  - pos: 71
+    q: "Do you experience a feeling of instability or giving way in any of your joints (like a knee or ankle)?"
+
+  # ---- Connective Tissue ----
+  - pos: 72
+    q: "Have you been diagnosed with Ehlers-Danlos syndrome (EDS) by a healthcare professional?"
+  - pos: 73
+    q: "Have you been diagnosed with Marfan syndrome by a healthcare professional?"
+  - pos: 74
+    q: "Have you been diagnosed with osteogenesis imperfecta (brittle bone disease) by a healthcare professional?"
+  - pos: 75
+    q: "Have you been diagnosed with scleroderma by a healthcare professional?"
+  - pos: 76
+    q: "Have you been diagnosed with hypermobile joints (double-jointed) in multiple limbs by a healthcare professional?"
+
+  # ---- Foot Health ----
+  - pos: 77
+    q: "Have you experienced plantar fasciitis (heel or arch pain) in the past 12 months?"
+  - pos: 78
+    q: "Have you been diagnosed with or do you have bunions on either of your feet?"
+  - pos: 79
+    q: "Do you currently wear custom orthotic insoles in your shoes?"
+    v: true
+  - pos: 80
+    q: "Have you experienced flat feet (pes planus) that cause pain or discomfort?"
+  - pos: 81
+    q: "Have you experienced high arches (pes cavus) that cause pain or discomfort?"
+  - pos: 82
+    q: "Have you experienced Morton's neuroma (nerve pain between toes)?"
+  - pos: 83
+    q: "Have you experienced Achilles tendonitis or pain in the past 12 months?"
+
+  # ---- Self-Care ----
+  - pos: 84
+    q: "Are you currently seeing a physical therapist for a musculoskeletal condition?"
+    v: true
+  - pos: 85
+    q: "Do you see a chiropractor regularly (at least once per month)?"
+    v: true
+  - pos: 86
+    q: "Do you perform strength training exercises (weights, bands, bodyweight) at least 2 days per week?"
+    v: true
+  - pos: 87
+    q: "Do you perform flexibility or mobility exercises (stretching, yoga) at least 3 days per week?"
+    v: true
+  - pos: 88
+    q: "Do you perform foam rolling or self-myofascial release regularly?"
+    v: true
+  - pos: 89
+    q: "Do you receive massage therapy regularly to manage muscle tension or pain?"
+    v: true
+  - pos: 90
+    q: "Do you track your daily active recovery metrics (like step count, activity levels)?"
+    v: true
+  - pos: 91
+    q: "Do you use hot or cold therapy (ice packs, heating pads, sauna, cold plunge) weekly?"
+    v: true
+  - pos: 92
+    q: "Do you practice posture correction exercises or ergonomics checks daily?"
+    v: true
+  - pos: 93
+    q: "Do you use braces, splints, or compression sleeves to support your joints during activity?"
+    v: true
+  - pos: 94
+    q: "Have you had an MRI of your ankle in the past 2 years?"
+  - pos: 95
+    q: "Have you had an MRI of your wrist in the past 2 years?"
+  - pos: 96
+    q: "Have you had an X-ray of your shoulder in the past 2 years?"
+  - pos: 97
+    q: "Have you had an X-ray of your ankle in the past 2 years?"
+
+  # ---- Foot Health ----
+  - pos: 98
+    q: "Have you had an X-ray of your foot in the past 2 years?"
+
+  # ---- Self-Care ----
+  - pos: 99
+    q: "Have you had an ultrasound of your shoulder tendons in the past 2 years?"
+  - pos: 100
+    q: "Have you had an ultrasound of your Achilles tendon in the past 2 years?"
+
+  # ---- Joint Conditions ----
+  - pos: 101
+    q: "Have you been diagnosed with patellofemoral pain syndrome (runner's knee)?"
+  - pos: 102
+    q: "Have you been diagnosed with IT band syndrome?"
+  - pos: 103
+    q: "Have you been diagnosed with shin splints (medial tibial stress syndrome)?"
+  - pos: 104
+    q: "Have you been diagnosed with tennis elbow (lateral epicondylitis)?"
+  - pos: 105
+    q: "Have you been diagnosed with golfer's elbow (medial epicondylitis)?"
+  - pos: 106
+    q: "Have you been diagnosed with De Quervain's tenosynovitis?"
+  - pos: 107
+    q: "Have you been diagnosed with trigger finger?"
+  - pos: 108
+    q: "Have you been diagnosed with Dupuytren's contracture?"
+  - pos: 109
+    q: "Have you been diagnosed with ganglionic cyst in wrist or foot?"
+  - pos: 110
+    q: "Have you been diagnosed with piriformis syndrome?"
+  - pos: 111
+    q: "Have you been diagnosed with trochanteric bursitis (hip bursitis)?"
+  - pos: 112
+    q: "Have you been diagnosed with adhesive capsulitis (frozen shoulder)?"
+  - pos: 113
+    q: "Have you been diagnosed with rotator cuff tear?"
+  - pos: 114
+    q: "Have you been diagnosed with labral tear in the shoulder?"
+  - pos: 115
+    q: "Have you been diagnosed with labral tear in the hip?"
+  - pos: 116
+    q: "Have you been diagnosed with meniscus tear in the knee?"
+  - pos: 117
+    q: "Have you been diagnosed with ligament tear in the ankle?"
+  - pos: 118
+    q: "Have you been diagnosed with chronic compartment syndrome?"
+
+  # ---- Self-Care ----
+  - pos: 119
+    q: "Do you experience joint clicking or popping without pain?"
+  - pos: 120
+    q: "Do you experience joint catching or locking during movement?"
+  - pos: 121
+    q: "Do you experience a feeling of weakness in your shoulder when lifting items?"
+  - pos: 122
+    q: "Do you experience a feeling of instability in your knee when pivoting?"
+  - pos: 123
+    q: "Do you experience a feeling of instability in your ankle when walking on uneven ground?"
+
+  # ---- Spine ----
+  - pos: 124
+    q: "Do you experience pain in your lower back when standing for more than 15 minutes?"
+  - pos: 125
+    q: "Do you experience pain in your neck when looking down at a phone for more than 15 minutes?"
+
+  # ---- Self-Care ----
+  - pos: 126
+    q: "Do you experience stiffness in your hips after driving for more than an hour?"
+  - pos: 127
+    q: "Do you experience stiffness in your knees after sitting in a movie theater?"
+  - pos: 128
+    q: "Do you use kinesiology tape (KT tape) to support your joints during exercise?"
+    v: true
+  - pos: 129
+    q: "Do you use a brace or sleeve on your knee during physical activity?"
+    v: true
+  - pos: 130
+    q: "Do you use a brace or sleeve on your ankle during physical activity?"
+    v: true
+  - pos: 131
+    q: "Do you use a brace or splint on your wrist at night?"
+    v: true
+  - pos: 132
+    q: "Do you use a lumbar support roll in your office chair?"
+    v: true
+  - pos: 133
+    q: "Do you use an ergonomic standing desk at work?"
+    v: true
+  - pos: 134
+    q: "Do you stand for at least 2 hours of your workday?"
+    v: true
+  - pos: 135
+    q: "Do you use a foam roller to roll out your IT bands?"
+    v: true
+  - pos: 136
+    q: "Do you use a lacrosse ball or massage ball to release tight glutes or shoulders?"
+    v: true
+
+  # ---- Muscle ----
+  - pos: 137
+    q: "Do you use a massage gun (percussion massager) for muscle recovery?"
+    v: true
+
+  # ---- Self-Care ----
+  - pos: 138
+    q: "Do you perform dynamic stretches before running or lifting?"
+    v: true
+  - pos: 139
+    q: "Do you perform static stretches after running or lifting?"
+    v: true
+  - pos: 140
+    q: "Do you practice yoga or Pilates at least once per week?"
+    v: true
+
+  # ---- Mobility and Functional Status ----
+  - pos: 141
+    q: "Do you practice tai chi or qigong for balance and mobility?"
+    v: true
+
+  # ---- Self-Care ----
+  - pos: 142
+    q: "Do you take a glucosamine supplement daily?"
+    v: true
+  - pos: 143
+    q: "Do you take a chondroitin supplement daily?"
+    v: true
+  - pos: 144
+    q: "Do you take an MSM (methylsulfonylmethane) supplement daily?"
+    v: true
+  - pos: 145
+    q: "Do you take a collagen supplement daily?"
+    v: true
+  - pos: 146
+    q: "Do you take a hyaluronic acid supplement daily?"
+    v: true
+  - pos: 147
+    q: "Do you take a turmeric or curcumin supplement daily?"
+    v: true
+  - pos: 148
+    q: "Do you take a ginger supplement daily for joint inflammation?"
+    v: true
+  - pos: 149
+    q: "Do you take a tart cherry supplement to prevent joint soreness?"
+    v: true
+
+  # ---- Muscle ----
+  - pos: 150
+    q: "Do you take Epsom salt baths regularly to relieve muscle soreness?"
+    v: true
+
+  # ---- Self-Care ----
+  - pos: 151
+    q: "Do you use a topical menthol or camphor gel (like Biofreeze) for joint pain?"
+  - pos: 152
+    q: "Do you use a topical capsaicin cream for chronic joint pain?"
+
+  # ---- Muscle ----
+  - pos: 153
+    q: "Do you use a topical CBD cream or oil for joint or muscle pain?"
+
+  # ---- Spine ----
+  - pos: 154
+    q: "Do you experience back stiffness in the morning that lasts for more than 30 minutes?"
+  - pos: 155
+    q: "Do you experience neck stiffness in the morning that lasts for more than 30 minutes?"
+  - pos: 156
+    q: "Does your back pain improve with light exercise or walking?"
+    v: true
+  - pos: 157
+    q: "Does your back pain worsen with prolonged sitting?"
+  - pos: 158
+    q: "Does your back pain worsen with prolonged standing?"
+
+  # ---- Self-Care ----
+  - pos: 159
+    q: "Do you experience numbness or tingling in your fingers or hands (cervical nerve related)?"
+
+  # ---- Foot Health ----
+  - pos: 160
+    q: "Do you experience numbness or tingling in your toes or feet (lumbar nerve related)?"
+
+  # ---- Spine ----
+  - pos: 161
+    q: "Have you ever had an MRI scan of your spine (cervical, thoracic, or lumbar)?"
+  - pos: 162
+    q: "Have you had an X-ray of your spine?"
+  - pos: 163
+    q: "Have you received a steroid injection in your spine for pain relief?"
+
+  # ---- Self-Care ----
+  - pos: 164
+    q: "Do you experience joint pain after sitting for more than an hour?"
+  - pos: 165
+    q: "Do you experience joint swelling after physical activity?"
+  - pos: 166
+    q: "Do you experience a grinding, popping, or crunching sensation in your knees (crepitus)?"
+  - pos: 167
+    q: "Do you experience joint pain during cold or damp weather?"
+  - pos: 168
+    q: "Do you experience joint stiffness within 10 minutes of waking up?"
+  - pos: 169
+    q: "Do you experience joint stiffness that disappears after 30 minutes of activity?"
+    v: true
+  - pos: 170
+    q: "Do you experience severe joint pain in your hips or knees when climbing stairs?"
+  - pos: 171
+    q: "Do you experience joint pain that interferes with your sleep?"
+  - pos: 172
+    q: "Have you had an X-ray of your knees or hips to check for joint space narrowing?"
+  - pos: 173
+    q: "Have you received a steroid injection (such as cortisone) in a joint?"
+  - pos: 174
+    q: "Have you received a hyaluronic acid injection (gel injection) in a knee joint?"
+
+  # ---- Surgical History ----
+  - pos: 175
+    q: "Have you been advised to undergo a joint replacement surgery in the future?"
+
+  # ---- Self-Care ----
+  - pos: 176
+    q: "Have you had a blood test for rheumatoid factor (RF) or anti-CCP antibodies?"
+    v: true
+  - pos: 177
+    q: "Have you had a blood test for HLA-B27 gene (linked to ankylosing spondylitis)?"
+    v: true
+
+  # ---- Joint Conditions ----
+  - pos: 178
+    q: "Have you been diagnosed with polymyalgia rheumatica?"
+  - pos: 179
+    q: "Have you been diagnosed with tendon sheath infection or tenosynovitis?"
+
+  # ---- Self-Care ----
+  - pos: 180
+    q: "Have you had your joint fluid analyzed by a doctor (joint aspiration)?"
+
+  # ---- Spine ----
+  - pos: 181
+    q: "Can you bend your thumb backward to touch your forearm?"
+  - pos: 182
+    q: "Can you bend your pinky finger backward past 90 degrees?"
+  - pos: 183
+    q: "Can you hyperextend your elbows backward past straight?"
+  - pos: 184
+    q: "Can you hyperextend your knees backward past straight?"
+
+  # ---- Self-Care ----
+  - pos: 185
+    q: "Can you place your hands flat on the floor without bending your knees?"
+  - pos: 186
+    q: "Did you have the ability to perform 'the splits' easily in your youth?"
+  - pos: 187
+    q: "Have you experienced recurrent joint subluxations (partial dislocations) without major trauma?"
+  - pos: 188
+    q: "Do you experience easy bruising or fragile skin?"
+
+  # ---- Muscle ----
+  - pos: 189
+    q: "Do you experience muscle spasms or cramps in your calves at night?"
+
+  # ---- Self-Care ----
+  - pos: 190
+    q: "Do you experience chronic pain in multiple areas of your body (at least 4 zones)?"
+
+  # ---- Muscle ----
+  - pos: 191
+    q: "Has a doctor identified specific tender points on your body (fibromyalgia check)?"
+  - pos: 192
+    q: "Do you take muscle relaxant medication regularly?"
+  - pos: 193
+    q: "Have you experienced a muscle tear in your thigh or calf in the past 12 months?"
+
+  # ---- Self-Care ----
+  - pos: 194
+    q: "Have you lost more than 1.5 inches of height compared to your peak height in youth?"
+
+  # ---- Spine ----
+  - pos: 195
+    q: "Have you had a fracture of your wrist, hip, or spine after age 50?"
+
+  # ---- Self-Care ----
+  - pos: 196
+    q: "Do you take calcium supplements daily?"
+    v: true
+
+  # ---- Bone ----
+  - pos: 197
+    q: "Do you take vitamin D3 and K2 supplements daily to support bone density?"
+    v: true
+
+  # ---- Acute and Recent Injury ----
+  - pos: 198
+    q: "Has a doctor told you that you have a vertebral compression fracture?"
+
+  # ---- Self-Care ----
+  - pos: 199
+    q: "Have you had an MRI of your knee in the past 2 years?"
+  - pos: 200
+    q: "Have you had an MRI of your shoulder in the past 2 years?"
+  - pos: 201
+    q: "Have you had an ultrasound of your tendons or joints?"
+  - pos: 202
+    q: "Have you been prescribed physical therapy exercises that you perform at home?"
+    v: true
+  - pos: 203
+    q: "Have you completed a full course of physical therapy (at least 6 sessions) in the past 12 months?"
+    v: true
+
+  # ---- Surgical History ----
+  - pos: 204
+    q: "Have you had arthroscopic meniscus surgery in the past 12 months?"
+  - pos: 205
+    q: "Have you had rotator cuff surgery in the past 12 months?"
+  - pos: 206
+    q: "Have you had carpal tunnel surgery in the past 12 months?"
+
+  # ---- Self-Care ----
+  - pos: 207
+    q: "Do you have permanent metal hardware (plates, screws, rods, pins) in your body?"
+  - pos: 208
+    q: "Do you require assistance to put on or take off your socks or shoes?"
+  - pos: 209
+    q: "Do you require assistance to get in or out of a bathtub or shower?"
+
+  # ---- Mobility and Functional Status ----
+  - pos: 210
+    q: "Do you experience difficulty opening jars or door handles due to hand pain?"
+  - pos: 211
+    q: "Do you experience difficulty writing or typing due to hand or wrist pain?"
+
+  # ---- Self-Care ----
+  - pos: 212
+    q: "Do you experience a loss of grip strength in either of your hands?"
+
+  # ---- Spine ----
+  - pos: 213
+    q: "Do you experience neck or upper back pain after working on a computer for 2 hours?"
+
+  # ---- Self-Care ----
+  - pos: 214
+    q: "Do you use an ergonomic keyboard, mouse, or desk setup at work?"
+    v: true
+  - pos: 215
+    q: "Do you use a lumbar support cushion in your chair or car?"
+    v: true
+  - pos: 216
+    q: "Do you experience sharp heel pain with your very first steps out of bed in the morning?"
+
+  # ---- Foot Health ----
+  - pos: 217
+    q: "Do you experience foot pain that worsens after exercise rather than during it?"
+  - pos: 218
+    q: "Have you had an ultrasound or MRI confirming plantar fasciitis?"
+
+  # ---- Self-Care ----
+  - pos: 219
+    q: "Have you received a steroid injection in your heel or arch?"
+
+  # ---- Foot Health ----
+  - pos: 220
+    q: "Have you had shockwave therapy for chronic tendon or foot pain?"
+
+  # ---- Self-Care ----
+  - pos: 221
+    q: "Do you wear wide-toe-box shoes to prevent bunion progression?"
+    v: true
+
+  # ---- Foot Health ----
+  - pos: 222
+    q: "Do you use toe spacers to improve foot alignment?"
+    v: true
+  - pos: 223
+    q: "Do you perform foot-strengthening exercises (like towel scrunches, toe spreads) regularly?"
+    v: true
+
+  # ---- Self-Care ----
+  - pos: 224
+    q: "Do you perform dynamic warm-up exercises before you start working out?"
+    v: true
+  - pos: 225
+    q: "Do you perform static stretching exercises after your workouts?"
+    v: true
+  - pos: 226
+    q: "Do you engage in low-impact exercise (like cycling, swimming, elliptical) to protect your joints?"
+    v: true
+  - pos: 227
+    q: "Do you follow a structured core-strengthening program (like Pilates or core work)?"
+    v: true
+  - pos: 228
+    q: "Do you monitor your posture throughout the day using a device or mirror?"
+    v: true
+  - pos: 229
+    q: "Do you experience chronic joint stiffness that improves with warm baths or showers?"
+    v: true
+  - pos: 230
+    q: "Do you use a topical pain relief cream (such as Voltarin, CBD, or menthol) weekly?"
+
+  # ---- Mobility and Functional Status ----
+  - pos: 231
+    q: "Do you take over-the-counter NSAIDs (like ibuprofen, naproxen) 3 or more days per week?"
+
+  # ---- Self-Care ----
+  - pos: 232
+    q: "Have you had your vitamin D levels tested in the past 12 months?"
+    v: true
+
+  # ---- Bone ----
+  - pos: 233
+    q: "Have you had a bone density test (DEXA) in your lifetime?"
+    v: true
+  - pos: 234
+    q: "Do you discuss your joint or bone health with a doctor at annual check-ups?"
+    v: true
+  - pos: 235
+    q: "Do you have a family history of osteoporosis?"
+
+  # ---- Joint Conditions ----
+  - pos: 236
+    q: "Do you have a family history of rheumatoid arthritis?"
+
+  # ---- Self-Care ----
+  - pos: 237
+    q: "Do you have a family history of scoliosis?"
+  - pos: 238
+    q: "Do you have a family history of gout?"
+
+  # ---- Surgical History ----
+  - pos: 239
+    q: "Do you have a family history of early joint replacement (before age 60)?"
+
+  # ---- Mobility and Functional Status ----
+  - pos: 240
+    q: "Do you have a family history of hypermobility or Ehlers-Danlos?"
+
+  # ---- Muscle ----
+  - pos: 241
+    q: "Do you feel that your muscle strength is balanced between your left and right sides?"
+    v: true
+
+  # ---- Self-Care ----
+  - pos: 242
+    q: "Do you experience joint pain or catching that makes you feel unsafe during heavy lifts?"
+
+  # ---- Foot Health ----
+  - pos: 243
+    q: "Do you wear supportive athletic shoes designed specifically for your foot type?"
+    v: true
+
+  # ---- Self-Care ----
+  - pos: 244
+    q: "Do you run or perform high-impact activities on soft surfaces (like grass, track) rather than concrete?"
+    v: true
+  - pos: 245
+    q: "Have you had a professional gait analysis or running form assessment?"
+    v: true
+  - pos: 246
+    q: "Do you take a collagen supplement daily to support joint health?"
+    v: true
+  - pos: 247
+    q: "Do you take glucosamine or chondroitin supplements daily?"
+    v: true
+  - pos: 248
+    q: "Do you take a turmeric or curcumin supplement daily for inflammation?"
+    v: true
+
+  # ---- Self-Monitoring ----
+  - pos: 249
+    q: "Do you track your daily resting statistics related to musculoskeletal health?"
+    v: true
+  - pos: 250
+    q: "Do you feel that your musculoskeletal health has improved over the past 12 months?"
+    v: true
+  - pos: 251
+    q: "Do you log your musculoskeletal symptoms weekly in a journal or app?"
+    v: true
+  - pos: 252
+    q: "Have you discussed your musculoskeletal health goals with a specialist?"
+    v: true
+  - pos: 253
+    q: "Do you wear a device that tracks metrics relevant to your musculoskeletal recovery?"
+    v: true
+  - pos: 254
+    q: "Do you avoid environmental triggers that worsen your musculoskeletal symptoms?"
+    v: true
+  - pos: 255
+    q: "Do you feel that your sleep quality directly impacts your musculoskeletal health?"
+    v: true
