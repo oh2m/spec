@@ -1,0 +1,29 @@
+pattern: 16
+domain: Reserved — community proposal
+spec_version: 0.1.1
+status: RESERVED
+authored_by: jamal
+last_revised: 2026-04-30
+ratification: open for community proposal
+
+description: |
+  Pattern 16 is intentionally reserved in v0.1.1 for community proposal.
+  The OH2M open reference patterns (1–16) cover community-ratified
+  domains. Pattern 16's domain has not been assigned; the community
+  is invited to propose a domain and a question set during the v0.1.x
+  to v1.0 ratification process.
+  
+  Candidate domains discussed informally have included sleep
+  architecture / chronobiology, occupational and exposure history,
+  pediatric / developmental, geriatric / aging-specific, disability
+  and adaptive function, pain (chronic), sensory (vision/hearing/
+  vestibular), oral and dental health, dermatological, endocrine
+  (beyond metabolic), pre-existing chronic conditions catalog, and
+  healthcare access and insurance context. None of these is
+  pre-selected; all are starting points for discussion.
+  
+  To propose Pattern 16's domain and question set, file a Schema
+  Proposal issue using the .github/ISSUE_TEMPLATE/schema_proposal.yml
+  template, marked with the label "pattern-16-proposal".
+
+questions:

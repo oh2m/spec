@@ -1,0 +1,3 @@
+# Critique — Pattern 16 (Reserved)
+
+The placeholder file `16-reserved.yml` makes it explicitly clear that Pattern 16 is intentionally reserved for community proposal and has not been forgotten. By providing concrete examples of potential future domains and describing the precise issue-filing process using the `schema_proposal.yml` template with the "pattern-16-proposal" label, the path is highly actionable for any community contributor. Currently, all references to Pattern 16 in the root `README.md`, `patterns.json`, and specification markdown consistently label it as "Reserved" for community proposals, preventing any contradictions. No questions have been drafted for this slot, preserving its status as a clean slate for future collaboration.
