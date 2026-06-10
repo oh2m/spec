@@ -1,72 +1,62 @@
 name: Domain Question Correction
-description: Report a question that is wrong, ambiguous, poorly scoped, or should be removed.
-title: "[Question-Fix] Pattern NN, pos NN — "
-labels: ["open-questions", "correction"]
+description: Propose a correction or refinement to an existing open reference question
+title: "[QUESTION CORRECTION]: "
+labels: ["question-correction", "triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Community review is how the open reference questions improve. Flag anything that's unclear, incorrect, out of scope, or that conflicts with an existing screening instrument.
-
+        Use this form if an existing open reference question has a typo, unclear phrasing, or incorrect medical terminology.
   - type: dropdown
-    id: pattern
+    id: domain
     attributes:
-      label: Pattern
+      label: Pattern Domain
+      description: Select the open reference pattern domain this correction belongs to.
       options:
-        - "1 — Cardiovascular"
-        - "2 — Metabolic"
-        - "3 — Musculoskeletal"
-        - "4 — Respiratory"
-        - "5 — Mental Health"
-        - "6 — Reproductive"
-        - "7 — Nutrition & Diet"
-        - "8 — Substances"
-        - "9 — Recent Medical Activity"
-        - "10 — Demographics & Context"
-        - "11 — Fitness History"
-        - "12 — Recovery & Sleep"
-        - "13 — Environmental"
-        - "14 — Genetics & Family History"
-        - "15 — Immunological"
-        - "16 — Reserved"
+        - "1 - Cardiovascular"
+        - "2 - Metabolic"
+        - "3 - Musculoskeletal"
+        - "4 - Respiratory"
+        - "5 - Mental Health"
+        - "6 - Reproductive"
+        - "7 - Nutrition & Diet"
+        - "8 - Substances"
+        - "9 - Recent Medical Activity"
+        - "10 - Demographics & Context"
+        - "11 - Fitness History"
+        - "12 - Recovery & Sleep"
+        - "13 - Environmental"
+        - "14 - Genetics & Family History"
+        - "15 - Immunological"
+        - "16 - Community Proposal (Reserved)"
     validations:
       required: true
-
   - type: input
     id: position
     attributes:
-      label: Bit position
-      placeholder: "e.g. 47"
-    validations:
-      required: false
-
-  - type: textarea
-    id: current-question
-    attributes:
-      label: Current question text
-      description: Copy the question as it currently reads.
+      label: Bit Position (1-255)
+      description: The position number of the question in the pattern.
+      placeholder: E.g., 85
     validations:
       required: true
-
-  - type: dropdown
-    id: issue-type
+  - type: textarea
+    id: current-text
     attributes:
-      label: Type of issue
-      options:
-        - Ambiguous or misleading phrasing
-        - Not answerable as a single yes/no bit
-        - Out of scope for this pattern
-        - Conflicts with a validated screening instrument (verbatim reproduction concern)
-        - V flag polarity is wrong or missing
-        - Should be removed entirely
-        - Other
+      label: Current Question Text
+      placeholder: Paste the existing question text here...
     validations:
       required: true
-
   - type: textarea
-    id: description
+    id: proposed-text
     attributes:
-      label: Description
-      description: Explain the problem and, if possible, suggest a fix.
+      label: Proposed Corrected Text
+      placeholder: Enter the new lay-friendly, neutral text...
+    validations:
+      required: true
+  - type: textarea
+    id: correction-rationale
+    attributes:
+      label: Reason for Correction
+      description: Why is this correction or refinement necessary? (E.g., typo, clinical accuracy, formatting issue, V-flag change).
     validations:
       required: true

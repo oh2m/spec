@@ -1,0 +1,5 @@
+# Self-Critique: Ticket 01 — GitHub Issues Infrastructure
+
+1. **Forced/Redundant Templates**: The separation between `domain_question_contribution.yml` and `domain_question_correction.yml` might feel slightly redundant, as they could potentially be merged into a single "Domain Question Updates" form. However, separating them keeps contributions (adding new things) clean from corrections (fixing errors/typos).
+2. **Future Splitting**: The `reference_implementation.yml` category might need to be split into separate templates for "Libraries/Parsers" vs. "Wearable/App Integrations" as the ecosystem grows, since the compliance checklist for a parser library differs significantly from an app integrating the format.
+3. **Guessed stubs in CONTRIBUTING.md**: The exact processes for RFCs on schema changes and the validation checklist for clinical questions were guessed as stubs (marked `TODO`) and will need Jamal's input to define how the community votes and validates changes before they are officially merged.

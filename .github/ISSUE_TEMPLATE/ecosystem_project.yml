@@ -1,52 +1,43 @@
 name: Ecosystem Project
-description: Share an app, service, or integration built on OH2M.
-title: "[Ecosystem] "
-labels: ["ecosystem"]
+description: Register a project, wearable integration, or application that uses OH2M
+title: "[ECOSYSTEM]: "
+labels: ["ecosystem", "triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Built something on OH2M? Share it. Apps, services, integrations, research uses, demos — all welcome.
-
+        Have you integrated OH2M into an app, dashboard, wearable, or AI tool? Register it here so the community can discover it.
   - type: input
-    id: name
+    id: project-name
     attributes:
-      label: Project name
+      label: Project Name
+      placeholder: E.g., OpenHeart Coach
     validations:
       required: true
-
   - type: input
-    id: url
+    id: project-url
     attributes:
-      label: URL (if public)
-      placeholder: "https://..."
+      label: Project URL
+      placeholder: E.g., https://github.com/username/project or website
     validations:
-      required: false
-
+      required: true
+  - type: dropdown
+    id: integration-type
+    attributes:
+      label: Integration Type
+      description: Select what type of integration your project is.
+      options:
+        - "Wearable Platform (exports .oh2m files)"
+        - "Consumer Application (imports and reads .oh2m files)"
+        - "AI Coaching / Agent Tool (interacts with .oh2m files)"
+        - "Developer Library / Parser"
+        - "Other"
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:
-      label: What does it do?
-      description: One paragraph is enough.
+      label: Project Description
+      description: What does the project do? How does it use OH2M (e.g. Layer 1 only, Layer 2 patterns, etc.)?
     validations:
       required: true
-
-  - type: dropdown
-    id: status
-    attributes:
-      label: Status
-      options:
-        - Concept / design phase
-        - In development
-        - Beta / preview
-        - Live / released
-    validations:
-      required: false
-
-  - type: textarea
-    id: oh2m-usage
-    attributes:
-      label: How does it use OH2M?
-      description: Which layers and patterns? What problem does OH2M solve in your context?
-    validations:
-      required: false

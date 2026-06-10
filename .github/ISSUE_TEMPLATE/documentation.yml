@@ -1,38 +1,31 @@
-name: Documentation
-description: Report unclear, missing, or incorrect documentation.
-title: "[Docs] "
-labels: ["documentation"]
+name: Documentation Update
+description: Suggest improvements or corrections to documentation or guides
+title: "[DOCS]: "
+labels: ["documentation", "triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Good documentation makes the difference between a spec people use and one they ignore. Point us at anything that's confusing, incomplete, or missing.
-
-  - type: input
-    id: location
-    attributes:
-      label: Where is the problem?
-      placeholder: "README.md, spec section 3.2, /open-questions/01-cardiovascular.yml..."
-    validations:
-      required: true
-
-  - type: dropdown
-    id: type
-    attributes:
-      label: Type of issue
-      options:
-        - Unclear or confusing explanation
-        - Missing information
-        - Incorrect information
-        - Broken link or reference
-        - Formatting or structure problem
-        - Other
-    validations:
-      required: true
-
+        Use this template to suggest fixes for typos, unclear sections, formatting errors, or formatting improvements in the specification or README.
   - type: textarea
-    id: description
+    id: documentation-part
     attributes:
-      label: What's wrong and what would help?
+      label: Section / Document Affected
+      description: Which file or section of the spec or README needs updating?
+      placeholder: E.g., Section 4.5 of spec-repo/spec/OH2M-Specification-v0.1.1.md
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Current Issue / Problem
+      description: Describe what is currently wrong, confusing, or incomplete.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-change
+    attributes:
+      label: Proposed Change
+      description: What is your suggested wording, layout, or fix?
     validations:
       required: true

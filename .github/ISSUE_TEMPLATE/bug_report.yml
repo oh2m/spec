@@ -1,54 +1,42 @@
 name: Bug Report
-description: Report a bug in the spec, a reference file, or official tooling.
-title: "[Bug] "
-labels: ["bug"]
+description: Report a bug or error in the spec or tooling
+title: "[BUG]: "
+labels: ["bug", "triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to report this. Please fill out the fields below as completely as you can.
-
+        Thank you for helping us improve OH2M! Please fill out the details below to report a bug.
   - type: textarea
-    id: what-happened
+    id: description
     attributes:
-      label: What happened?
-      description: Describe the bug clearly.
-      placeholder: "When parsing a Layer 2 block with pattern 3, the mask field is misread if..."
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe the problem...
     validations:
       required: true
-
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How did you encounter this bug? Include sample .oh2m files or code snippets if possible.
+      placeholder: |
+        1. Open file...
+        2. Run parser...
+        3. Encounter error...
+    validations:
+      required: true
   - type: textarea
     id: expected
     attributes:
-      label: What did you expect?
-      description: What should have happened?
+      label: Expected Behavior
+      description: What did you expect to happen instead?
     validations:
       required: true
-
-  - type: textarea
-    id: reproduce
-    attributes:
-      label: Steps to reproduce
-      description: Minimal steps to reproduce the issue.
-      placeholder: |
-        1. Open an `.oh2m` file with...
-        2. Parse the Layer 2 block...
-        3. Observe...
-    validations:
-      required: false
-
-  - type: input
-    id: spec-version
-    attributes:
-      label: Spec version
-      placeholder: "v0.1.1"
-    validations:
-      required: false
-
   - type: textarea
     id: context
     attributes:
-      label: Additional context
-      description: Relevant file snippets, output, or links.
+      label: Additional Context
+      description: Add any other context, operating system, parser version, or logs here.
     validations:
       required: false

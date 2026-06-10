@@ -1,43 +1,40 @@
-name: Spec Ambiguity
-description: Flag a part of the spec that two implementers could read differently.
-title: "[Ambiguity] "
-labels: ["spec-ambiguity", "needs-discussion"]
+name: Specification Ambiguity
+description: Report a section of the specification that is unclear or ambiguous
+title: "[AMBIGUITY]: "
+labels: ["spec-ambiguity", "triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        If the spec text allows two different valid interpretations, that's a bug. These issues are high priority — interoperability depends on a single unambiguous reading.
-
+        If you are implementing OH2M and encounter a section of the spec that can be interpreted in multiple ways, use this form to report it.
   - type: input
-    id: location
+    id: spec-section
     attributes:
-      label: Spec location
-      placeholder: "OH2M-Specification-v0.1.1, section 4.2 — Layer 2 Mask"
+      label: Specification Section
+      placeholder: E.g., Section 4.5 The Mask
     validations:
       required: true
-
   - type: textarea
-    id: ambiguity
+    id: description
     attributes:
-      label: What are the two readings?
-      description: Describe both interpretations as clearly as possible. A good report names the exact sentence or clause that causes the ambiguity.
+      label: Ambiguity Description
+      description: Explain what is ambiguous and show the relevant spec quote.
+    validations:
+      required: true
+  - type: textarea
+    id: interpretations
+    attributes:
+      label: Possible Interpretations
+      description: Describe the different ways this text could be interpreted.
       placeholder: |
-        Reading A: the mask bit applies before the V flag, so a masked-out slot is ignored before inversion.
-        Reading B: the V flag applies first, and the mask determines whether the inverted result is included.
+        Interpretation A: ...
+        Interpretation B: ...
     validations:
       required: true
-
-  - type: textarea
-    id: preferred
-    attributes:
-      label: Which reading do you believe is correct, and why?
-    validations:
-      required: false
-
   - type: textarea
     id: impact
     attributes:
-      label: Implementation impact
-      description: What breaks or behaves differently depending on which reading is used?
+      label: Impact on Implementations
+      description: How does this ambiguity affect compatibility or interoperability between different parsers?
     validations:
-      required: false
+      required: true

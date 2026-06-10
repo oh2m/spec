@@ -1,64 +1,66 @@
 name: Domain Question Contribution
-description: Propose new questions for a pattern in the open reference set (Patterns 1–16).
-title: "[Question] Pattern NN — "
-labels: ["open-questions", "needs-discussion"]
+description: Propose a new question for one of the open reference patterns (1-16)
+title: "[QUESTION CONTRIB]: "
+labels: ["question-contribution", "triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        The 4,080 open reference questions are the community's most important contribution right now. Questions must be answerable as a single yes/no bit. See the spec and existing files in `/open-questions/` for formatting conventions.
-
+        Thank you for contributing to the open reference questions! Each pattern has exactly 255 slots.
   - type: dropdown
-    id: pattern
+    id: domain
     attributes:
-      label: Pattern
+      label: Pattern Domain
+      description: Select the open reference pattern domain this question belongs to.
       options:
-        - "1 — Cardiovascular"
-        - "2 — Metabolic"
-        - "3 — Musculoskeletal"
-        - "4 — Respiratory"
-        - "5 — Mental Health"
-        - "6 — Reproductive"
-        - "7 — Nutrition & Diet"
-        - "8 — Substances"
-        - "9 — Recent Medical Activity"
-        - "10 — Demographics & Context"
-        - "11 — Fitness History"
-        - "12 — Recovery & Sleep"
-        - "13 — Environmental"
-        - "14 — Genetics & Family History"
-        - "15 — Immunological"
-        - "16 — Reserved (community proposals)"
+        - "1 - Cardiovascular"
+        - "2 - Metabolic"
+        - "3 - Musculoskeletal"
+        - "4 - Respiratory"
+        - "5 - Mental Health"
+        - "6 - Reproductive"
+        - "7 - Nutrition & Diet"
+        - "8 - Substances"
+        - "9 - Recent Medical Activity"
+        - "10 - Demographics & Context"
+        - "11 - Fitness History"
+        - "12 - Recovery & Sleep"
+        - "13 - Environmental"
+        - "14 - Genetics & Family History"
+        - "15 - Immunological"
+        - "16 - Community Proposal (Reserved)"
     validations:
       required: true
-
   - type: textarea
-    id: questions
+    id: question-text
     attributes:
-      label: Proposed question(s)
-      description: |
-        Write each question in plain language, answerable as yes/no. Include the bit position you suggest (1–255), or leave blank if flexible. Use the format:
-        ```
-        pos: 42
-        q: "Have you been diagnosed with..."
-        v: false  # optional — set true if bit polarity should be inverted
-        notes: "Optional clinical context."
-        ```
+      label: Proposed Question Text
+      description: Must be lay-accessible, single-bit (yes/no) answerable, and neutral.
+      placeholder: E.g., Have you been diagnosed with asthma?
     validations:
       required: true
-
-  - type: textarea
-    id: rationale
+  - type: input
+    id: position
     attributes:
-      label: Rationale
-      description: Why does this question add information value at the population level?
+      label: Proposed Bit Position (1-255)
+      description: If you have a specific slot index in mind. Position 0 is reserved.
+      placeholder: E.g., 42
     validations:
       required: false
-
-  - type: textarea
-    id: expertise
+  - type: dropdown
+    id: v-flag
     attributes:
-      label: Your expertise (optional)
-      description: Clinical background, lived experience, research area — helps reviewers weight the proposal.
+      label: V-Flag (Inversion)
+      description: Should the bit stored on-disk be inverted relative to the natural reading of the question?
+      options:
+        - "No (v: false)"
+        - "Yes (v: true)"
     validations:
-      required: false
+      required: true
+  - type: textarea
+    id: clinical-rationale
+    attributes:
+      label: Rationale / Context
+      description: Why should this question be included in the open reference set? What population-level information does it capture?
+    validations:
+      required: true

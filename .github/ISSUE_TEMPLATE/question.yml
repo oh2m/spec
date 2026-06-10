@@ -1,24 +1,24 @@
-name: Question
-description: Ask a question about the spec, file format, or how OH2M works.
-title: "[Question] "
-labels: ["question"]
+name: General Question
+description: Ask a general question about the specification, project, or usage
+title: "[QUESTION]: "
+labels: ["question", "triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Questions are welcome. If the answer reveals a gap in the documentation, we'll use it to improve the spec.
-
+        Have a general question about how to use OH2M or how to implement it? Ask here!
   - type: textarea
     id: question
     attributes:
-      label: Your question
+      label: Your Question
+      description: What would you like to know or clarify?
+      placeholder: Ask your question...
     validations:
       required: true
-
   - type: textarea
     id: context
     attributes:
-      label: Context (optional)
-      description: What are you trying to do? What have you already read?
+      label: Context
+      description: Provide any context (code snippet, spec section, or file format example) that helps explain your question.
     validations:
       required: false

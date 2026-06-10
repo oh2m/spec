@@ -1,28 +1,17 @@
-name: Security Issue
-description: Report a security vulnerability — please read the security policy first.
-title: "[Security] "
+name: Report a Security Vulnerability
+description: Learn how to report a security vulnerability privately (Do not open public issues)
+title: "[SECURITY]: "
 labels: ["security"]
 body:
   - type: markdown
     attributes:
       value: |
-        **Please do not report security vulnerabilities in public Issues.**
+        ### Do Not Open a Public Issue for Security Vulnerabilities
 
-        Read [`SECURITY.md`](../SECURITY.md) for the private reporting process. This template is for non-sensitive security-adjacent questions — for example, a question about the spec's privacy properties or a concern about how OH2M interacts with a specific threat model.
+        If you have identified a security vulnerability or privacy issue, please **do not** submit a public bug report.
 
-        If your report contains a specific vulnerability, close this issue and follow the private process in `SECURITY.md`.
+        Please follow our private reporting process:
+        1. Read our **[Security Policy](https://github.com/oh2m/spec/blob/main/SECURITY.md)**.
+        2. Send a private email with details of the vulnerability to the address listed in `SECURITY.md` (currently marked `TODO: email`).
 
-  - type: textarea
-    id: concern
-    attributes:
-      label: Security concern or question
-    validations:
-      required: true
-
-  - type: textarea
-    id: context
-    attributes:
-      label: Context
-      description: Threat model, affected layers, relevant implementation details.
-    validations:
-      required: false
+        Thank you for helping keep OH2M secure!

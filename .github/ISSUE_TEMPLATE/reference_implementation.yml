@@ -1,68 +1,49 @@
 name: Reference Implementation
-description: Register or announce an OH2M implementation — parser, writer, adapter, or tooling.
-title: "[Implementation] "
-labels: ["ecosystem", "reference-implementation"]
+description: Submit or register an official reference implementation or parser library
+title: "[REF IMPL]: "
+labels: ["reference-implementation", "triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        OH2M is built for implementation. Share what you've built — parsers, writers, adapters, SDKs, CLI tools, or anything that speaks `.oh2m`. We'll list it in the ecosystem index.
-
+        We encourage official reference implementations across multiple languages. Submit your library for review here.
   - type: input
-    id: project-name
+    id: library-name
     attributes:
-      label: Project name
+      label: Library Name
+      placeholder: E.g., oh2m-rust, oh2m-python
     validations:
       required: true
-
-  - type: input
-    id: url
-    attributes:
-      label: URL
-      placeholder: "https://github.com/..."
-    validations:
-      required: true
-
-  - type: dropdown
-    id: type
-    attributes:
-      label: Type
-      options:
-        - Parser (reads .oh2m files)
-        - Writer (produces .oh2m files)
-        - Both parser and writer
-        - Adapter (converts from/to another format)
-        - SDK / library
-        - CLI tool
-        - Other
-    validations:
-      required: true
-
-  - type: dropdown
-    id: layer-support
-    attributes:
-      label: Layer support
-      multiple: true
-      options:
-        - Layer 1
-        - Layer 2 (open reference patterns 1–16)
-        - Layer 2 (custom patterns)
-        - Layer 3
-    validations:
-      required: false
-
   - type: input
     id: language
     attributes:
-      label: Language / platform
-      placeholder: "Python, JavaScript, Rust, Go..."
+      label: Programming Language / Platform
+      placeholder: E.g., Rust, Python, Go, TypeScript, Swift
     validations:
-      required: false
-
+      required: true
+  - type: input
+    id: repo-url
+    attributes:
+      label: Repository URL
+      placeholder: E.g., https://github.com/username/oh2m-rust
+    validations:
+      required: true
+  - type: checkboxes
+    id: features
+    attributes:
+      label: Supported Parser Features
+      description: Select which parts of the OH2M v0.1.1 spec your library implements.
+      options:
+        - label: "Layer 1 Parser (Plain text read/write)"
+        - label: "Layer 2 Parser (Manifest decoding & validation)"
+        - label: "Layer 2 Parser (Mask application & bit index matching)"
+        - label: "Layer 2 Parser (V flag inversion decoding)"
+        - label: "Layer 3 Parser (Encrypted hash signaling/delimiters)"
+        - label: "Full spec validation (Flagging SUSPECT files)"
   - type: textarea
     id: notes
     attributes:
-      label: Notes
-      description: Anything else worth knowing — maturity, limitations, license.
+      label: Additional Notes
+      description: Add any other information about compliance, design choices, or performance here.
     validations:
       required: false

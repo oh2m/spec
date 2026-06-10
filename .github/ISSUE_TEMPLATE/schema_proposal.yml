@@ -1,54 +1,49 @@
 name: Schema Proposal
-description: Propose a change or addition to the OH2M spec or file format.
-title: "[Schema] "
-labels: ["schema-proposal", "needs-discussion"]
+description: Propose a change or addition to the Layer 1 or Layer 2 schema
+title: "[PROPOSAL]: "
+labels: ["schema-proposal", "triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Schema proposals shape the standard for everyone. Please describe your proposal clearly, including the problem it solves and any tradeoffs.
-
+        Use this template to propose additions or modifications to the OH2M Layer 1 fields, Layer 2 syntax, or Layer 3 delimiters.
   - type: textarea
-    id: problem
+    id: summary
     attributes:
-      label: Problem or gap
-      description: What does the current spec not handle well?
+      label: Summary
+      description: Provide a brief summary of the proposed schema change.
+      placeholder: E.g., Add a new activity type or Layer 1 field...
     validations:
       required: true
-
   - type: textarea
-    id: proposal
+    id: motivation
     attributes:
-      label: Proposed change
-      description: Describe what you'd like to add or change.
+      label: Motivation / Use Case
+      description: Why is this change necessary? What problem does it solve for users or implementers?
     validations:
       required: true
-
   - type: textarea
-    id: rationale
+    id: detailed-design
     attributes:
-      label: Rationale
-      description: Why is this the right approach? What alternatives did you consider?
+      label: Detailed Design
+      description: Describe the changes in detail (including exact field names, types, constraints, and syntax changes).
+      placeholder: |
+        Field name: hr_resting
+        Type: integer
+        Location: Layer 1
     validations:
-      required: false
-
+      required: true
   - type: textarea
-    id: tradeoffs
+    id: backward-compatibility
     attributes:
-      label: Tradeoffs and risks
-      description: What does this break or complicate?
+      label: Backward Compatibility
+      description: Does this change break compatibility with older version parsers or existing files? How will we handle migration?
     validations:
-      required: false
-
-  - type: dropdown
-    id: layer
+      required: true
+  - type: textarea
+    id: alternatives
     attributes:
-      label: Which layer does this affect?
-      options:
-        - Layer 1 (open / human-readable)
-        - Layer 2 (bit field / patterns)
-        - Layer 3 (hash / cryptography)
-        - Cross-layer / file format
-        - Governance / spec process
+      label: Alternatives Considered
+      description: List any alternative designs you considered and why this proposed approach is preferred.
     validations:
       required: false
