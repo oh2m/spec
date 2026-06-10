@@ -1,0 +1,766 @@
+pattern: 4
+domain: Respiratory
+spec_version: 0.1.1
+status: DRAFT
+authored_by: jamal
+last_revised: 2026-04-30
+polarity_note: "V flag inverts bit storage; question text is never inverted. See spec for details."
+ratification: pending community review
+scope_exclusions:
+  - "neonatal respiratory distress"
+  - "acute mechanical ventilation ICU settings"
+
+questions:
+
+  # ---- Diagnosed Conditions ----
+  - pos: 1
+    q: "Have you been diagnosed with asthma by a healthcare professional?"
+  - pos: 2
+    q: "Have you been diagnosed with COPD (chronic obstructive pulmonary disease) by a healthcare professional?"
+  - pos: 3
+    q: "Have you been diagnosed with emphysema by a healthcare professional?"
+  - pos: 4
+    q: "Have you been diagnosed with chronic bronchitis by a healthcare professional?"
+  - pos: 5
+    q: "Have you been diagnosed with cystic fibrosis by a healthcare professional?"
+  - pos: 6
+    q: "Have you been diagnosed with pulmonary fibrosis by a healthcare professional?"
+  - pos: 7
+    q: "Have you been diagnosed with sarcoidosis affecting the lungs by a healthcare professional?"
+  - pos: 8
+    q: "Have you been diagnosed with pulmonary hypertension by a healthcare professional?"
+  - pos: 9
+    q: "Have you been diagnosed with bronchiectasis by a healthcare professional?"
+  - pos: 10
+    q: "Have you been diagnosed with cough-variant asthma by a healthcare professional?"
+  - pos: 11
+    q: "Have you been diagnosed with exercise-induced bronchospasm (exercise asthma) by a healthcare professional?"
+  - pos: 12
+    q: "Have you been diagnosed with vocal cord dysfunction (VCD) by a healthcare professional?"
+  - pos: 13
+    q: "Have you been diagnosed with pleurisy (inflammation of the lung lining) by a healthcare professional?"
+  - pos: 14
+    q: "Have you been diagnosed with pneumothorax (collapsed lung) by a healthcare professional?"
+  - pos: 15
+    q: "Have you been diagnosed with sleep apnea (obstructive or central) by a healthcare professional?"
+
+  # ---- Allergic and Immune-Related ----
+  - pos: 16
+    q: "Have you been diagnosed with or do you have ('seasonal allergic rhinitis (hay fever)', False)?"
+  - pos: 17
+    q: "Have you been diagnosed with or do you have ('allergic asthma', False)?"
+  - pos: 18
+    q: "Have you been diagnosed with or do you have ('had an anaphylaxis episode requiring epinephrine injection', False)?"
+  - pos: 19
+    q: "Have you been diagnosed with or do you have ('currently carry a prescription epinephrine autoinjector (EpiPen)', False)?"
+  - pos: 20
+    q: "Have you been diagnosed with or do you have ('moderate to severe environmental allergies (dust, mold, animals)', False)?"
+  - pos: 21
+    q: "Have you been diagnosed with or do you have ('food allergy that affects your breathing', False)?"
+  - pos: 22
+    q: "Have you been diagnosed with or do you have ('nasal polyps', False)?"
+  - pos: 23
+    q: "Have you been diagnosed with or do you have ('chronic sinusitis', False)?"
+
+  # ---- Sleep-Related Breathing ----
+  - pos: 24
+    q: "obstructive sleep apnea (OSA)"
+  - pos: 25
+    q: "Do you currently use a CPAP or BiPAP machine during sleep?"
+    v: true
+  - pos: 26
+    q: "Have you been told by a partner or family member that you snore loudly?"
+  - pos: 27
+    q: "Have you been told that you gasp, choke, or stop breathing during sleep?"
+  - pos: 28
+    q: "Do you wake up in the morning with a dry mouth or throat regularly?"
+  - pos: 29
+    q: "Do you wake up feeling unrefreshed or with a headache in the morning?"
+  - pos: 30
+    q: "Do you experience excessive daytime sleepiness or fall asleep easily during the day?"
+  - pos: 31
+    q: "Do you wear a dental device or oral appliance specifically to prevent snoring or apnea?"
+    v: true
+
+  # ---- Acute and Recent Infections ----
+  - pos: 32
+    q: "Have you experienced or had pneumonia requiring antibiotics or hospitalization in the past 12 months?"
+  - pos: 33
+    q: "Have you experienced or had acute bronchitis in the past 12 months?"
+  - pos: 34
+    q: "Have you experienced or had been hospitalized for a respiratory illness in the past 12 months?"
+  - pos: 35
+    q: "Have you experienced or had severe respiratory syncytial virus (RSV) infection in the past 12 months?"
+  - pos: 36
+    q: "Have you experienced or had whooping cough (pertussis) in the past 12 months?"
+  - pos: 37
+    q: "Have you experienced or had strep throat or tonsillitis in the past 12 months?"
+  - pos: 38
+    q: "Have you experienced or had sinus infection requiring antibiotics in the past 12 months?"
+  - pos: 39
+    q: "Have you experienced or had influenza (the flu) that kept you in bed for more than 3 days in the past 12 months?"
+  - pos: 40
+    q: "Have you experienced or had COVID-19 (confirmed by test or doctor diagnosis) in the past 12 months?"
+
+  # ---- Long-Term Effects ----
+  - pos: 41
+    q: "Do you experience persistent long COVID symptoms that affect your daily activities?"
+  - pos: 42
+    q: "Do you experience a chronic cough that has lasted for more than 8 weeks?"
+  - pos: 43
+    q: "Do you experience unexplained shortness of breath during daily activities?"
+  - pos: 44
+    q: "Have you noticed a permanent reduction in your lung capacity or exercise tolerance?"
+
+  # ---- Smoking and Exposure History ----
+  - pos: 45
+    q: "Do you currently smoke cigarettes or use tobacco products daily?"
+  - pos: 46
+    q: "Have you smoked cigarettes or used tobacco products in the past?"
+  - pos: 47
+    q: "Do you currently use vaping products or e-cigarettes daily?"
+  - pos: 48
+    q: "Were you exposed to regular secondhand smoke in your childhood home?"
+  - pos: 49
+    q: "Are you exposed to regular secondhand smoke in your current home or workplace?"
+  - pos: 50
+    q: "Do you have a history of occupational exposure to chemical fumes, dust, or silica?"
+  - pos: 51
+    q: "Do you have a history of occupational exposure to asbestos?"
+  - pos: 52
+    q: "Have you lived in an area with high levels of industrial air pollution for more than 5 years?"
+  - pos: 53
+    q: "Do you use wood or coal as a primary heating or cooking source in your home?"
+  - pos: 54
+    q: "Do you experience respiratory symptoms (like coughing, wheezing) when exposed to air pollution?"
+
+  # ---- Treatments ----
+  - pos: 55
+    q: "Are you currently using or have you ever had daily controller inhaler (such as fluticasone, budesonide, symbicort)?"
+  - pos: 56
+    q: "Are you currently using or have you ever had rescue inhaler (such as albuterol, ventolin) as needed?"
+  - pos: 57
+    q: "Are you currently using or have you ever had oral steroid medication (such as prednisone) for a lung condition?"
+  - pos: 58
+    q: "Are you currently using or have you ever had home oxygen therapy?"
+  - pos: 59
+    q: "Are you currently using or have you ever had nebulizer machine at home for breathing treatments?"
+  - pos: 60
+    q: "Are you currently using or have you ever had lung surgery (such as lobectomy, lung volume reduction)?"
+  - pos: 61
+    q: "Are you currently using or have you ever had sinus or nasal surgery (such as septoplasty or sinus drainage)?"
+  - pos: 62
+    q: "Are you currently using or have you ever had allergy immunotherapy (allergy shots or sublingual drops)?"
+
+  # ---- Vaccinations ----
+  - pos: 63
+    q: "Do you receive an influenza (flu) vaccine annually?"
+    v: true
+  - pos: 64
+    q: "Have you received a COVID-19 vaccine in the past 12 months?"
+    v: true
+  - pos: 65
+    q: "Have you ever received a pneumococcal (pneumonia) vaccine?"
+    v: true
+  - pos: 66
+    q: "Have you received the RSV vaccine (if eligible)?"
+    v: true
+  - pos: 67
+    q: "Are you up to date on your Tdap (tetanus, diphtheria, pertussis) vaccine?"
+    v: true
+
+  # ---- Self-Monitoring ----
+  - pos: 68
+    q: "Do you own a peak flow meter to measure your lung function?"
+    v: true
+  - pos: 69
+    q: "Do you use a peak flow meter at home at least once per week?"
+    v: true
+  - pos: 70
+    q: "Do you own a pulse oximeter to measure your blood oxygen levels?"
+    v: true
+  - pos: 71
+    q: "Do you use a pulse oximeter at home to track your oxygen saturation?"
+    v: true
+  - pos: 72
+    q: "Do you log or track your respiratory symptoms in an app or diary?"
+    v: true
+  - pos: 73
+    q: "Do you monitor your breathing rate (respiration rate) using a wearable device?"
+    v: true
+
+  # ---- Family History ----
+  - pos: 74
+    q: "Do you have a first-degree relative (parent, sibling) diagnosed with asthma?"
+  - pos: 75
+    q: "Do you have a family history of alpha-1 antitrypsin deficiency (genetic COPD risk)?"
+  - pos: 76
+    q: "Do you have a first-degree relative diagnosed with lung cancer?"
+  - pos: 77
+    q: "Do you have a first-degree relative diagnosed with cystic fibrosis?"
+  - pos: 78
+    q: "Do you have a first-degree relative diagnosed with pulmonary fibrosis?"
+
+  # ---- Long-Term Effects ----
+  - pos: 79
+    q: "Do you experience wheezing or whistling in your chest when breathing?"
+  - pos: 80
+    q: "Do you experience chest tightness when breathing during cold weather?"
+  - pos: 81
+    q: "Do you experience coughing fits during or immediately after exercise?"
+
+  # ---- Self-Monitoring ----
+  - pos: 82
+    q: "Does your breathing limit your ability to perform moderate physical activity?"
+
+  # ---- Long-Term Effects ----
+  - pos: 83
+    q: "Do you cough up phlegm or mucus daily?"
+  - pos: 84
+    q: "Do you experience shortness of breath when walking up a slight hill?"
+
+  # ---- Self-Monitoring ----
+  - pos: 85
+    q: "Do you feel out of breath after climbing a single flight of stairs?"
+
+  # ---- Long-Term Effects ----
+  - pos: 86
+    q: "Do you experience shortness of breath when doing household chores (like cleaning)?"
+  - pos: 87
+    q: "Do you experience wheezing or coughing that wakes you up at night?"
+
+  # ---- Treatments ----
+  - pos: 88
+    q: "Have you used your rescue inhaler 3 or more times in the past week?"
+
+  # ---- Self-Monitoring ----
+  - pos: 89
+    q: "Have you missed school or work in the past 12 months due to a breathing problem?"
+
+  # ---- Diagnosed Conditions ----
+  - pos: 90
+    q: "Has a doctor told you that your asthma is well-controlled?"
+    v: true
+
+  # ---- Self-Monitoring ----
+  - pos: 91
+    q: "Have you undergone a spirometry (lung function) test in a clinic?"
+    v: true
+  - pos: 92
+    q: "Have you undergone full pulmonary function testing (PFTs) in a lab?"
+    v: true
+  - pos: 93
+    q: "Have you had a chest X-ray in the past 2 years?"
+  - pos: 94
+    q: "Have you had a high-resolution CT (HRCT) scan of your chest?"
+  - pos: 95
+    q: "Have you undergone a bronchoscopy procedure?"
+  - pos: 96
+    q: "Have you had an arterial blood gas (ABG) test to check oxygen/carbon dioxide levels?"
+  - pos: 97
+    q: "Have you had a sleep study (polysomnography) in a clinic or at home?"
+    v: true
+
+  # ---- Long-Term Effects ----
+  - pos: 98
+    q: "Do you experience sneezing, nasal congestion, or itchy eyes during spring or fall?"
+
+  # ---- Self-Monitoring ----
+  - pos: 99
+    q: "Do you use a HEPA air purifier in your bedroom?"
+    v: true
+  - pos: 100
+    q: "Do you monitor the outdoor Air Quality Index (AQI) before exercising outside?"
+    v: true
+  - pos: 101
+    q: "Do you avoid outdoor exercise when the AQI is in the unhealthy range?"
+    v: true
+
+  # ---- Long-Term Effects ----
+  - pos: 102
+    q: "Do you experience chest tightness when exposed to strong perfumes or chemical smells?"
+  - pos: 103
+    q: "Do you experience coughing or wheezing when exposed to cold, dry air?"
+  - pos: 104
+    q: "Do you experience nasal allergy symptoms when exposed to cats or dogs?"
+
+  # ---- Self-Monitoring ----
+  - pos: 105
+    q: "Do you have allergen-proof covers on your pillows and mattress?"
+    v: true
+  - pos: 106
+    q: "Do you clean your home heating and cooling filters at least every 3 months?"
+    v: true
+  - pos: 107
+    q: "Have you had your home tested for radon gas?"
+    v: true
+  - pos: 108
+    q: "Have you ever had visible mold in your current home that required remediation?"
+
+  # ---- Sleep-Related Breathing ----
+  - pos: 109
+    q: "Do you clean your CPAP mask and water chamber at least weekly?"
+    v: true
+  - pos: 110
+    q: "Do you use distilled water in your CPAP humidifier?"
+    v: true
+
+  # ---- Long-Term Effects ----
+  - pos: 111
+    q: "Do you experience dry eyes or skin irritation from your CPAP mask leaking?"
+  - pos: 112
+    q: "Do you experience nasal congestion specifically from using a CPAP?"
+
+  # ---- Sleep-Related Breathing ----
+  - pos: 113
+    q: "Do you sleep on your side specifically to reduce snoring or apnea?"
+    v: true
+
+  # ---- Self-Monitoring ----
+  - pos: 114
+    q: "Do you use nasal strips (like Breathe Right) or nasal dilators during sleep?"
+    v: true
+  - pos: 115
+    q: "Do you practice mouth-taping during sleep to encourage nasal breathing?"
+    v: true
+  - pos: 116
+    q: "Do you practice specific breathing exercises (such as Buteyko, box breathing, Wim Hof) daily?"
+    v: true
+  - pos: 117
+    q: "Do you perform cardiovascular exercise at least 3 days per week to support lung capacity?"
+    v: true
+  - pos: 118
+    q: "Do you practice deep breathing or diaphragmatic breathing to manage stress?"
+    v: true
+
+  # ---- Treatments ----
+  - pos: 119
+    q: "Do you avoid using aerosol sprays (deodorant, cleaners) in enclosed spaces?"
+    v: true
+
+  # ---- Self-Monitoring ----
+  - pos: 120
+    q: "Do you wear a protective mask (like N95) when doing woodworking or dusty chores?"
+    v: true
+
+  # ---- Long-Term Effects ----
+  - pos: 121
+    q: "Do you experience shortness of breath when wearing a standard face mask?"
+
+  # ---- Self-Monitoring ----
+  - pos: 122
+    q: "Do you use a saline nasal spray or neti pot regularly to clear your sinuses?"
+    v: true
+  - pos: 123
+    q: "Do you take an over-the-counter antihistamine daily or seasonally?"
+
+  # ---- Treatments ----
+  - pos: 124
+    q: "Do you use a prescription steroid nasal spray (like fluticasone) daily?"
+
+  # ---- Long-Term Effects ----
+  - pos: 125
+    q: "Have you ever experienced a severe asthma attack requiring an emergency room visit?"
+
+  # ---- Self-Monitoring ----
+  - pos: 126
+    q: "Have you ever been intubated or put on a ventilator due to respiratory failure?"
+
+  # ---- Long-Term Effects ----
+  - pos: 127
+    q: "Do you experience hoarseness or loss of voice after talking for 1 hour?"
+  - pos: 128
+    q: "Do you experience a sensation of a lump in your throat (globus sensation)?"
+
+  # ---- Diagnosed Conditions ----
+  - pos: 129
+    q: "Have you been diagnosed with acid reflux (GERD) that triggers coughing?"
+
+  # ---- Long-Term Effects ----
+  - pos: 130
+    q: "Do you take medication for acid reflux to manage a chronic cough?"
+
+  # ---- Self-Monitoring ----
+  - pos: 131
+    q: "Have you quit smoking tobacco products within the past 12 months?"
+    v: true
+  - pos: 132
+    q: "Have you quit smoking tobacco products more than 10 years ago?"
+    v: true
+  - pos: 133
+    q: "Do you regularly socialise or spend time in indoor spaces where smoking is permitted?"
+  - pos: 134
+    q: "Have you worked in a coal mine, quarry, or sandblasting site?"
+
+  # ---- Smoking and Exposure History ----
+  - pos: 135
+    q: "Have you worked in agricultural settings with exposure to grain dust or animal confinement?"
+
+  # ---- Self-Monitoring ----
+  - pos: 136
+    q: "Do you use a fireplace or wood-burning stove inside your home weekly during winter?"
+
+  # ---- Long-Term Effects ----
+  - pos: 137
+    q: "Did you receive the pertussis (whooping cough) booster in the past 10 years?"
+    v: true
+
+  # ---- Self-Monitoring ----
+  - pos: 138
+    q: "Do you discuss your vaccination status with a doctor annually?"
+    v: true
+  - pos: 139
+    q: "Do you know your personal best peak flow reading?"
+    v: true
+
+  # ---- Long-Term Effects ----
+  - pos: 140
+    q: "Do you regularly experience blood oxygen saturation readings below 95% at rest?"
+  - pos: 141
+    q: "Do you regularly experience blood oxygen saturation readings below 90% during exercise?"
+
+  # ---- Self-Monitoring ----
+  - pos: 142
+    q: "Do you track your respiration rate changes over time to detect early illness?"
+    v: true
+  - pos: 143
+    q: "Do you track your resting heart rate alongside your respiration rate?"
+    v: true
+
+  # ---- Diagnosed Conditions ----
+  - pos: 144
+    q: "Do you have a first-degree relative diagnosed with COPD who never smoked?"
+
+  # ---- Family History ----
+  - pos: 145
+    q: "Do you have a family history of alpha-1 antitrypsin deficiency?"
+  - pos: 146
+    q: "Do you have a family history of primary ciliary dyskinesia?"
+
+  # ---- Treatments ----
+  - pos: 147
+    q: "Do you have a first-degree relative who had lung surgery?"
+
+  # ---- Diagnosed Conditions ----
+  - pos: 148
+    q: "Have you been diagnosed with sleep-related hypoxemia?"
+  - pos: 149
+    q: "Have you been diagnosed with central sleep apnea?"
+  - pos: 150
+    q: "Have you been diagnosed with hyperventilation syndrome?"
+  - pos: 151
+    q: "Have you been diagnosed with occupational asthma?"
+  - pos: 152
+    q: "Have you been diagnosed with hypersensitivity ophthalmologic allergies?"
+  - pos: 153
+    q: "Have you been diagnosed with histoplasmosis or other fungal lung infection?"
+  - pos: 154
+    q: "Have you been diagnosed with tuberculosis (active or latent)?"
+
+  # ---- Self-Monitoring ----
+  - pos: 155
+    q: "Have you had a positive PPD (tuberculosis skin test) or QuantiFERON blood test?"
+  - pos: 156
+    q: "Have you taken a course of isoniazid or other TB prevention medication?"
+
+  # ---- Diagnosed Conditions ----
+  - pos: 157
+    q: "Have you been diagnosed with alpha-1 antitrypsin deficiency yourself?"
+
+  # ---- Long-Term Effects ----
+  - pos: 158
+    q: "Do you experience chest wall pain or soreness after a coughing fit?"
+  - pos: 159
+    q: "Do you experience dizziness or lightheadedness after a coughing fit?"
+  - pos: 160
+    q: "Do you experience a squeaking or rattling sound in your throat when breathing?"
+
+  # ---- Self-Monitoring ----
+  - pos: 161
+    q: "Do you feel that your nose is persistently blocked on one side?"
+
+  # ---- Long-Term Effects ----
+  - pos: 162
+    q: "Do you experience shortness of breath when walking on flat ground at your own pace?"
+  - pos: 163
+    q: "Do you experience shortness of breath when dressing or undressing?"
+
+  # ---- Treatments ----
+  - pos: 164
+    q: "Do you currently carry a rescue inhaler with you at all times?"
+
+  # ---- Self-Monitoring ----
+  - pos: 165
+    q: "Do you wear a medical alert bracelet for severe asthma or lung disease?"
+  - pos: 166
+    q: "Do you have a written Asthma Action Plan or COPD Action Plan signed by a doctor?"
+    v: true
+  - pos: 167
+    q: "Do you see a pulmonologist (lung specialist) at least once per year?"
+    v: true
+  - pos: 168
+    q: "Have you had your blood count (red blood cells) checked in the past 12 months?"
+    v: true
+
+  # ---- Diagnosed Conditions ----
+  - pos: 169
+    q: "Has a doctor told you that your red blood cell count is high (common in chronic low oxygen)?"
+
+  # ---- Self-Monitoring ----
+  - pos: 170
+    q: "Do you practice breathing exercises specifically before sleep to improve sleep quality?"
+    v: true
+  - pos: 171
+    q: "Do you use a humidifier in your bedroom during dry winter months?"
+    v: true
+  - pos: 172
+    q: "Do you use a dehumidifier in your home to keep humidity below 50% (prevents dust mites/mold)?"
+    v: true
+
+  # ---- Smoking and Exposure History ----
+  - pos: 173
+    q: "Do you avoid carpeted flooring in your home to reduce allergen exposure?"
+    v: true
+
+  # ---- Self-Monitoring ----
+  - pos: 174
+    q: "Do you wash your bedding in hot water (at least 130°F) weekly to kill dust mites?"
+    v: true
+  - pos: 175
+    q: "Do you have a pet (dog or cat) that sleeps in your bedroom?"
+  - pos: 176
+    q: "Have you had a professional allergen assessment of your home?"
+    v: true
+  - pos: 177
+    q: "Do you feel confident in managing your respiratory health?"
+    v: true
+
+  # ---- Long-Term Effects ----
+  - pos: 178
+    q: "Do you experience wheezing when exposed to perfume or colognes?"
+  - pos: 179
+    q: "Do you experience coughing when exposed to cigarette smoke?"
+  - pos: 180
+    q: "Do you experience chest tightness when exposed to wood smoke?"
+  - pos: 181
+    q: "Do you experience shortness of breath when exposed to dust?"
+  - pos: 182
+    q: "Do you experience nasal congestion when exposed to dust mites?"
+  - pos: 183
+    q: "Do you experience sneezing fits when exposed to mold?"
+  - pos: 184
+    q: "Do you experience itchy eyes when exposed to tree pollen?"
+  - pos: 185
+    q: "Do you experience scratchy throat when exposed to grass pollen?"
+  - pos: 186
+    q: "Do you experience nasal drainage when exposed to weed pollen?"
+
+  # ---- Self-Monitoring ----
+  - pos: 187
+    q: "Do you use a nasal saline rinse (like a neti pot) daily?"
+    v: true
+  - pos: 188
+    q: "Do you use a nasal saline spray daily?"
+    v: true
+  - pos: 189
+    q: "Do you use a prescription nasal spray daily?"
+    v: true
+  - pos: 190
+    q: "Do you take an over-the-counter allergy pill daily?"
+    v: true
+  - pos: 191
+    q: "Do you take a prescription allergy pill daily?"
+    v: true
+  - pos: 192
+    q: "Do you use allergy eye drops daily?"
+    v: true
+  - pos: 193
+    q: "Do you wear a dust mask when vacuuming or sweeping?"
+    v: true
+  - pos: 194
+    q: "Do you wear a dust mask when gardening or mowing the lawn?"
+    v: true
+  - pos: 195
+    q: "Do you use a vacuum cleaner with a HEPA filter?"
+    v: true
+  - pos: 196
+    q: "Do you wash your sheets in hot water (at least 130°F) weekly?"
+    v: true
+  - pos: 197
+    q: "Do you use allergen-proof dust mite covers on your mattress?"
+    v: true
+  - pos: 198
+    q: "Do you use allergen-proof dust mite covers on your pillows?"
+    v: true
+  - pos: 199
+    q: "Do you keep pets (dogs or cats) out of your bedroom?"
+    v: true
+  - pos: 200
+    q: "Do you have carpeted floors in your bedroom?"
+  - pos: 201
+    q: "Do you use a dehumidifier in your basement or crawl space?"
+    v: true
+  - pos: 202
+    q: "Do you use a humidifier in your bedroom during winter?"
+    v: true
+
+  # ---- Treatments ----
+  - pos: 203
+    q: "Do you monitor the indoor humidity level using a hygrometer?"
+    v: true
+
+  # ---- Self-Monitoring ----
+  - pos: 204
+    q: "Do you keep indoor humidity below 50% to prevent mold and dust mites?"
+    v: true
+  - pos: 205
+    q: "Do you have a carbon monoxide detector installed near your bedroom?"
+    v: true
+  - pos: 206
+    q: "Do you have a radon mitigation system installed in your home?"
+    v: true
+  - pos: 207
+    q: "Have you had your home tested for mold in the past 2 years?"
+    v: true
+
+  # ---- Long-Term Effects ----
+  - pos: 208
+    q: "Do you experience sinus headaches during changes in barometric pressure?"
+  - pos: 209
+    q: "Do you experience ear pressure or popping during flights or mountain drives?"
+  - pos: 210
+    q: "Do you experience chest tightness when exercising in high humidity?"
+  - pos: 211
+    q: "Do you experience coughing fits when laughing or crying heartily?"
+  - pos: 212
+    q: "Do you experience shortness of breath when speaking in long sentences?"
+  - pos: 213
+    q: "Do you experience a sensation of not being able to take a full deep breath?"
+
+  # ---- Self-Monitoring ----
+  - pos: 214
+    q: "Do you practice deep diaphragmatic breathing regularly?"
+    v: true
+  - pos: 215
+    q: "Do you practice alternate nostril breathing (nadi shodhana) regularly?"
+    v: true
+  - pos: 216
+    q: "Do you practice box breathing (4-4-4-4 technique) to calm your nervous system?"
+    v: true
+  - pos: 217
+    q: "Do you monitor your respiration rate trend weekly?"
+    v: true
+  - pos: 218
+    q: "Do you track your peak flow readings in a logbook or app?"
+    v: true
+  - pos: 219
+    q: "Do you share your peak flow readings with your doctor?"
+    v: true
+  - pos: 220
+    q: "Do you have an action plan for managing asthma flares?"
+    v: true
+
+  # ---- Treatments ----
+  - pos: 221
+    q: "Do you know the difference between a controller inhaler and a rescue inhaler?"
+    v: true
+  - pos: 222
+    q: "Do you use a spacer device with your inhaler to ensure proper delivery?"
+    v: true
+  - pos: 223
+    q: "Do you rinse your mouth with water after using your controller inhaler (to prevent thrush)?"
+    v: true
+
+  # ---- Long-Term Effects ----
+  - pos: 224
+    q: "Do you experience a rapid heart rate (jitters) after using your rescue inhaler?"
+
+  # ---- Treatments ----
+  - pos: 225
+    q: "Have you been prescribed a rescue inhaler in the past 12 months?"
+  - pos: 226
+    q: "Have you had a prescription for oral steroids (like prednisone) for breathing in the past year?"
+
+  # ---- Self-Monitoring ----
+  - pos: 227
+    q: "Have you had a chest CT scan in your lifetime?"
+  - pos: 228
+    q: "Have you had a chest X-ray in your lifetime?"
+  - pos: 229
+    q: "Have you had a lung biopsy?"
+  - pos: 230
+    q: "Have you had a bronchoscopy?"
+  - pos: 231
+    q: "Have you had a sleep study?"
+
+  # ---- Diagnosed Conditions ----
+  - pos: 232
+    q: "Have you been diagnosed with mild sleep apnea?"
+  - pos: 233
+    q: "Have you been diagnosed with moderate sleep apnea?"
+  - pos: 234
+    q: "Have you been diagnosed with severe sleep apnea?"
+
+  # ---- Long-Term Effects ----
+  - pos: 235
+    q: "Do you experience morning headaches (a common symptom of sleep apnea)?"
+  - pos: 236
+    q: "Do you experience morning grogginess or brain fog?"
+
+  # ---- Self-Monitoring ----
+  - pos: 237
+    q: "Do you fall asleep unintentionally during quiet activities (like reading or watching TV)?"
+  - pos: 238
+    q: "Do you track your daily resting statistics related to respiratory health?"
+    v: true
+  - pos: 239
+    q: "Do you feel that your respiratory health has improved over the past 12 months?"
+    v: true
+  - pos: 240
+    q: "Do you log your respiratory symptoms weekly in a journal or app?"
+    v: true
+  - pos: 241
+    q: "Have you discussed your respiratory health goals with a specialist?"
+    v: true
+  - pos: 242
+    q: "Do you wear a device that tracks metrics relevant to your respiratory recovery?"
+    v: true
+  - pos: 243
+    q: "Do you avoid environmental triggers that worsen your respiratory symptoms?"
+    v: true
+  - pos: 244
+    q: "Do you feel that your sleep quality directly impacts your respiratory health?"
+    v: true
+  - pos: 245
+    q: "Do you research new research or updates regarding respiratory wellness?"
+    v: true
+  - pos: 246
+    q: "Do you feel confident managing your respiratory health at home?"
+    v: true
+  - pos: 247
+    q: "Have you had a comprehensive physical exam in the past 12 months?"
+    v: true
+  - pos: 248
+    q: "Do you perform low-impact exercise regularly to support your respiratory system?"
+    v: true
+  - pos: 249
+    q: "Do you consume a diet rich in antioxidants to support your respiratory function?"
+    v: true
+  - pos: 250
+    q: "Do you follow all prescribed treatment plans for your respiratory health?"
+    v: true
+  - pos: 251
+    q: "Do you track your subjective energy levels daily?"
+    v: true
+  - pos: 252
+    q: "Do you track your daily water intake to support cellular metabolism?"
+    v: true
+  - pos: 253
+    q: "Do you avoid highly processed foods to support overall systemic health?"
+    v: true
+  - pos: 254
+    q: "Do you take a high-quality multivitamin daily to cover micronutrient gaps?"
+    v: true
+  - pos: 255
+    q: "Do you perform deep breathing exercises daily to reduce systemic stress?"
+    v: true
