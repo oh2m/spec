@@ -1,0 +1,66 @@
+name: Domain Question Contribution
+description: Propose a new question for one of the open reference patterns (1-16)
+title: "[QUESTION CONTRIB]: "
+labels: ["question-contribution", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to the open reference questions! Each pattern has exactly 255 slots.
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Pattern Domain
+      description: Select the open reference pattern domain this question belongs to.
+      options:
+        - "1 - Cardiovascular"
+        - "2 - Metabolic"
+        - "3 - Musculoskeletal"
+        - "4 - Respiratory"
+        - "5 - Mental Health"
+        - "6 - Reproductive"
+        - "7 - Nutrition & Diet"
+        - "8 - Substances"
+        - "9 - Recent Medical Activity"
+        - "10 - Demographics & Context"
+        - "11 - Fitness History"
+        - "12 - Recovery & Sleep"
+        - "13 - Environmental"
+        - "14 - Genetics & Family History"
+        - "15 - Immunological"
+        - "16 - Community Proposal (Reserved)"
+    validations:
+      required: true
+  - type: textarea
+    id: question-text
+    attributes:
+      label: Proposed Question Text
+      description: Must be lay-accessible, single-bit (yes/no) answerable, and neutral.
+      placeholder: E.g., Have you been diagnosed with asthma?
+    validations:
+      required: true
+  - type: input
+    id: position
+    attributes:
+      label: Proposed Bit Position (1-255)
+      description: If you have a specific slot index in mind. Position 0 is reserved.
+      placeholder: E.g., 42
+    validations:
+      required: false
+  - type: dropdown
+    id: v-flag
+    attributes:
+      label: V-Flag (Inversion)
+      description: Should the bit stored on-disk be inverted relative to the natural reading of the question?
+      options:
+        - "No (v: false)"
+        - "Yes (v: true)"
+    validations:
+      required: true
+  - type: textarea
+    id: clinical-rationale
+    attributes:
+      label: Rationale / Context
+      description: Why should this question be included in the open reference set? What population-level information does it capture?
+    validations:
+      required: true

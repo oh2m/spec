@@ -1,0 +1,43 @@
+name: Ecosystem Project
+description: Register a project, wearable integration, or application that uses OH2M
+title: "[ECOSYSTEM]: "
+labels: ["ecosystem", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have you integrated OH2M into an app, dashboard, wearable, or AI tool? Register it here so the community can discover it.
+  - type: input
+    id: project-name
+    attributes:
+      label: Project Name
+      placeholder: E.g., OpenHeart Coach
+    validations:
+      required: true
+  - type: input
+    id: project-url
+    attributes:
+      label: Project URL
+      placeholder: E.g., https://github.com/username/project or website
+    validations:
+      required: true
+  - type: dropdown
+    id: integration-type
+    attributes:
+      label: Integration Type
+      description: Select what type of integration your project is.
+      options:
+        - "Wearable Platform (exports .oh2m files)"
+        - "Consumer Application (imports and reads .oh2m files)"
+        - "AI Coaching / Agent Tool (interacts with .oh2m files)"
+        - "Developer Library / Parser"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Project Description
+      description: What does the project do? How does it use OH2M (e.g. Layer 1 only, Layer 2 patterns, etc.)?
+    validations:
+      required: true

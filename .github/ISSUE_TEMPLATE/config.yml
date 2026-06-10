@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: OH2M Official Website
+    url: https://oh2m.org
+    about: Visit the official home of the Open Heart-to-Model standard.
+  - name: Buy Me a Coffee
+    url: https://buymeacoffee.com/jamalbakari
+    about: Support the creator of the OH2M specification.

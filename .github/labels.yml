@@ -1,0 +1,33 @@
+- name: bug
+  color: d73a4a
+  description: Something isn't working as expected in spec, formats, or tools.
+- name: schema-proposal
+  color: a2eeef
+  description: Proposing a change or addition to Layer 1 or Layer 2 schemas.
+- name: question-contribution
+  color: 7f52ff
+  description: Proposing a new health question for Patterns 1-16.
+- name: question-correction
+  color: e4ff52
+  description: Correcting a typo or phrasing in existing Pattern questions.
+- name: reference-implementation
+  color: 006b75
+  description: Relates to parser/writer libraries in different programming languages.
+- name: documentation
+  color: 0075ca
+  description: Suggesting changes to spec documents, appendices, or README.
+- name: spec-ambiguity
+  color: b60205
+  description: Flagging text in the spec that is unclear or has multiple interpretations.
+- name: ecosystem
+  color: 0052cc
+  description: Registering new applications, wearable adapters, or AI integrations.
+- name: question
+  color: d876e3
+  description: General query or request for clarification.
+- name: security
+  color: e99695
+  description: Security vulnerabilities or private reporting queries.
+- name: triage
+  color: 5319e7
+  description: Newly submitted issues waiting to be classified and reviewed.

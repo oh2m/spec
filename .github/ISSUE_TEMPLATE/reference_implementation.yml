@@ -1,0 +1,49 @@
+name: Reference Implementation
+description: Submit or register an official reference implementation or parser library
+title: "[REF IMPL]: "
+labels: ["reference-implementation", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We encourage official reference implementations across multiple languages. Submit your library for review here.
+  - type: input
+    id: library-name
+    attributes:
+      label: Library Name
+      placeholder: E.g., oh2m-rust, oh2m-python
+    validations:
+      required: true
+  - type: input
+    id: language
+    attributes:
+      label: Programming Language / Platform
+      placeholder: E.g., Rust, Python, Go, TypeScript, Swift
+    validations:
+      required: true
+  - type: input
+    id: repo-url
+    attributes:
+      label: Repository URL
+      placeholder: E.g., https://github.com/username/oh2m-rust
+    validations:
+      required: true
+  - type: checkboxes
+    id: features
+    attributes:
+      label: Supported Parser Features
+      description: Select which parts of the OH2M v0.1.1 spec your library implements.
+      options:
+        - label: "Layer 1 Parser (Plain text read/write)"
+        - label: "Layer 2 Parser (Manifest decoding & validation)"
+        - label: "Layer 2 Parser (Mask application & bit index matching)"
+        - label: "Layer 2 Parser (V flag inversion decoding)"
+        - label: "Layer 3 Parser (Encrypted hash signaling/delimiters)"
+        - label: "Full spec validation (Flagging SUSPECT files)"
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Add any other information about compliance, design choices, or performance here.
+    validations:
+      required: false

@@ -1,0 +1,62 @@
+name: Domain Question Correction
+description: Propose a correction or refinement to an existing open reference question
+title: "[QUESTION CORRECTION]: "
+labels: ["question-correction", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form if an existing open reference question has a typo, unclear phrasing, or incorrect medical terminology.
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Pattern Domain
+      description: Select the open reference pattern domain this correction belongs to.
+      options:
+        - "1 - Cardiovascular"
+        - "2 - Metabolic"
+        - "3 - Musculoskeletal"
+        - "4 - Respiratory"
+        - "5 - Mental Health"
+        - "6 - Reproductive"
+        - "7 - Nutrition & Diet"
+        - "8 - Substances"
+        - "9 - Recent Medical Activity"
+        - "10 - Demographics & Context"
+        - "11 - Fitness History"
+        - "12 - Recovery & Sleep"
+        - "13 - Environmental"
+        - "14 - Genetics & Family History"
+        - "15 - Immunological"
+        - "16 - Community Proposal (Reserved)"
+    validations:
+      required: true
+  - type: input
+    id: position
+    attributes:
+      label: Bit Position (1-255)
+      description: The position number of the question in the pattern.
+      placeholder: E.g., 85
+    validations:
+      required: true
+  - type: textarea
+    id: current-text
+    attributes:
+      label: Current Question Text
+      placeholder: Paste the existing question text here...
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-text
+    attributes:
+      label: Proposed Corrected Text
+      placeholder: Enter the new lay-friendly, neutral text...
+    validations:
+      required: true
+  - type: textarea
+    id: correction-rationale
+    attributes:
+      label: Reason for Correction
+      description: Why is this correction or refinement necessary? (E.g., typo, clinical accuracy, formatting issue, V-flag change).
+    validations:
+      required: true

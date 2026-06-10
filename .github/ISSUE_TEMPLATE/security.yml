@@ -1,0 +1,17 @@
+name: Report a Security Vulnerability
+description: Learn how to report a security vulnerability privately (Do not open public issues)
+title: "[SECURITY]: "
+labels: ["security"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Do Not Open a Public Issue for Security Vulnerabilities
+
+        If you have identified a security vulnerability or privacy issue, please **do not** submit a public bug report.
+
+        Please follow our private reporting process:
+        1. Read our **[Security Policy](https://github.com/oh2m/spec/blob/main/SECURITY.md)**.
+        2. Send a private email with details of the vulnerability to the address listed in `SECURITY.md` (currently marked `TODO: email`).
+
+        Thank you for helping keep OH2M secure!

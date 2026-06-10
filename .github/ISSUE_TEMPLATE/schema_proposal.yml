@@ -1,0 +1,49 @@
+name: Schema Proposal
+description: Propose a change or addition to the Layer 1 or Layer 2 schema
+title: "[PROPOSAL]: "
+labels: ["schema-proposal", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to propose additions or modifications to the OH2M Layer 1 fields, Layer 2 syntax, or Layer 3 delimiters.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Provide a brief summary of the proposed schema change.
+      placeholder: E.g., Add a new activity type or Layer 1 field...
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation / Use Case
+      description: Why is this change necessary? What problem does it solve for users or implementers?
+    validations:
+      required: true
+  - type: textarea
+    id: detailed-design
+    attributes:
+      label: Detailed Design
+      description: Describe the changes in detail (including exact field names, types, constraints, and syntax changes).
+      placeholder: |
+        Field name: hr_resting
+        Type: integer
+        Location: Layer 1
+    validations:
+      required: true
+  - type: textarea
+    id: backward-compatibility
+    attributes:
+      label: Backward Compatibility
+      description: Does this change break compatibility with older version parsers or existing files? How will we handle migration?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: List any alternative designs you considered and why this proposed approach is preferred.
+    validations:
+      required: false
