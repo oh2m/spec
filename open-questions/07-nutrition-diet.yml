@@ -1,0 +1,768 @@
+pattern: 7
+domain: Nutrition & Diet
+spec_version: 0.1.1
+status: DRAFT
+authored_by: jamal
+last_revised: 2026-04-30
+polarity_note: "V flag inverts bit storage; question text is never inverted."
+ratification: pending community review
+scope_exclusions:
+
+questions:
+
+  # ---- Dietary Patterns ----
+  - pos: 1
+    q: "Do you follow a vegetarian by choice?"
+    v: true
+  - pos: 2
+    q: "Do you follow a vegan (purely plant-based) by choice?"
+    v: true
+  - pos: 3
+    q: "Do you follow a pescatarian (fish and vegetarian) by choice?"
+    v: true
+  - pos: 4
+    q: "Do you follow a Mediterranean diet by choice?"
+    v: true
+  - pos: 5
+    q: "Do you follow a ketogenic or very low-carbohydrate diet by choice?"
+  - pos: 6
+    q: "Do you follow a paleo diet by choice?"
+  - pos: 7
+    q: "Do you follow a whole-food plant-based diet by choice?"
+    v: true
+  - pos: 8
+    q: "Do you follow a kosher dietary laws by choice?"
+    v: true
+  - pos: 9
+    q: "Do you follow a halal dietary laws by choice?"
+    v: true
+
+  # ---- Restrictions and Intolerances ----
+  - pos: 10
+    q: "Do you have lactose intolerance that affects your food choices?"
+  - pos: 11
+    q: "Do you have gluten intolerance or celiac disease?"
+  - pos: 12
+    q: "Do you have a diagnosed peanut or tree nut allergy?"
+  - pos: 13
+    q: "Do you have a diagnosed shellfish allergy?"
+  - pos: 14
+    q: "Do you have Irritable Bowel Syndrome (IBS) requiring a modified diet (such as low-FODMAP)?"
+  - pos: 15
+    q: "Do you have diagnosed eosinophilic esophagitis?"
+  - pos: 16
+    q: "Have you experienced food insecurity (worried about having enough food) in the past 12 months?"
+
+  # ---- Eating and Hydration Patterns ----
+  - pos: 17
+    q: "Do you practice intermittent fasting regularly?"
+    v: true
+  - pos: 18
+    q: "Do you practice time-restricted eating (eating within a specific daily window)?"
+    v: true
+  - pos: 19
+    q: "Do you eat one meal a day (OMAD) regularly?"
+  - pos: 20
+    q: "Have you done an extended fast (greater than 24 hours) in the past 12 months?"
+  - pos: 21
+    q: "Do you primarily consume food prepared at home from fresh ingredients?"
+    v: true
+  - pos: 22
+    q: "Do you eat fast food or pre-packaged convenience meals more than twice a week?"
+  - pos: 23
+    q: "Do you consume sugar-sweetened beverages (soda, sweet tea) daily?"
+  - pos: 24
+    q: "Do you eat at least 5 servings of vegetables daily?"
+    v: true
+  - pos: 25
+    q: "Do you consume added sugars daily?"
+  - pos: 26
+    q: "Do you drink more than 2 liters of water daily?"
+    v: true
+
+  # ---- Supplementation ----
+  - pos: 27
+    q: "Do you regularly take a daily multivitamin?"
+    v: true
+  - pos: 28
+    q: "Do you regularly take a vitamin D supplement?"
+    v: true
+  - pos: 29
+    q: "Do you regularly take a vitamin B12 supplement?"
+    v: true
+  - pos: 30
+    q: "Do you regularly take an iron supplement?"
+    v: true
+  - pos: 31
+    q: "Do you regularly take an omega-3 fish oil or algal oil supplement?"
+    v: true
+  - pos: 32
+    q: "Do you regularly take a magnesium supplement?"
+    v: true
+  - pos: 33
+    q: "Do you regularly take creatine monohydrate?"
+    v: true
+  - pos: 34
+    q: "Do you regularly take protein powder or protein shakes regularly?"
+    v: true
+  - pos: 35
+    q: "Do you regularly take a prescribed clinical nutritional supplement?"
+    v: true
+
+  # ---- Digestive Health and Tracking Habits ----
+  - pos: 36
+    q: "Have you ever been diagnosed with an eating disorder (such as anorexia or bulimia)?"
+  - pos: 37
+    q: "Have you ever received professional treatment for an eating disorder?"
+  - pos: 38
+    q: "Do you experience chronic constipation (fewer than 3 bowel movements per week)?"
+  - pos: 39
+    q: "Do you experience chronic loose stools or diarrhea?"
+  - pos: 40
+    q: "Do you take a probiotic supplement daily?"
+    v: true
+  - pos: 41
+    q: "Have you ever undergone bariatric (weight loss) surgery?"
+  - pos: 42
+    q: "Have you been diagnosed with acid reflux (GERD)?"
+  - pos: 43
+    q: "Do you use a mobile app to log your daily meals or calories?"
+    v: true
+  - pos: 44
+    q: "Do you track your daily macronutrient targets (grams of protein, carbs, fat)?"
+    v: true
+  - pos: 45
+    q: "Have you worked with a registered dietitian or nutritionist in the past 12 months?"
+    v: true
+
+  # ---- Self-Monitoring ----
+  - pos: 46
+    q: "Do you track your daily resting statistics related to nutrition & diet health?"
+    v: true
+  - pos: 47
+    q: "Do you feel that your nutrition & diet health has improved over the past 12 months?"
+    v: true
+  - pos: 48
+    q: "Do you log your nutrition & diet symptoms weekly in a journal or app?"
+    v: true
+  - pos: 49
+    q: "Have you discussed your nutrition & diet health goals with a specialist?"
+    v: true
+  - pos: 50
+    q: "Do you wear a device that tracks metrics relevant to your nutrition & diet recovery?"
+    v: true
+  - pos: 51
+    q: "Do you avoid environmental triggers that worsen your nutrition & diet symptoms?"
+    v: true
+  - pos: 52
+    q: "Do you feel that your sleep quality directly impacts your nutrition & diet health?"
+    v: true
+  - pos: 53
+    q: "Do you research new research or updates regarding nutrition & diet wellness?"
+    v: true
+  - pos: 54
+    q: "Do you feel confident managing your nutrition & diet health at home?"
+    v: true
+  - pos: 55
+    q: "Have you had a comprehensive physical exam in the past 12 months?"
+    v: true
+  - pos: 56
+    q: "Do you perform low-impact exercise regularly to support your nutrition & diet system?"
+    v: true
+  - pos: 57
+    q: "Do you consume a diet rich in antioxidants to support your nutrition & diet function?"
+    v: true
+  - pos: 58
+    q: "Do you follow all prescribed treatment plans for your nutrition & diet health?"
+    v: true
+  - pos: 59
+    q: "Do you track your subjective energy levels daily?"
+    v: true
+  - pos: 60
+    q: "Do you track your daily water intake to support cellular metabolism?"
+    v: true
+  - pos: 61
+    q: "Do you avoid highly processed foods to support overall systemic health?"
+    v: true
+  - pos: 62
+    q: "Do you take a high-quality multivitamin daily to cover micronutrient gaps?"
+    v: true
+  - pos: 63
+    q: "Do you perform deep breathing exercises daily to reduce systemic stress?"
+    v: true
+  - pos: 64
+    q: "Do you limit your caffeine intake to support sleep quality and recovery?"
+    v: true
+  - pos: 65
+    q: "Do you limit your alcohol consumption to protect cellular and metabolic health?"
+    v: true
+  - pos: 66
+    q: "Do you track your resting heart rate daily?"
+    v: true
+  - pos: 67
+    q: "Do you track your heart rate variability (HRV) daily?"
+    v: true
+  - pos: 68
+    q: "Do you feel that you have adequate social support to manage your health?"
+    v: true
+  - pos: 69
+    q: "Do you have a primary care doctor whom you visit at least once per year?"
+    v: true
+  - pos: 70
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 70?"
+    v: true
+  - pos: 71
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 71?"
+    v: true
+  - pos: 72
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 72?"
+    v: true
+  - pos: 73
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 73?"
+    v: true
+  - pos: 74
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 74?"
+    v: true
+  - pos: 75
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 75?"
+    v: true
+  - pos: 76
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 76?"
+    v: true
+  - pos: 77
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 77?"
+    v: true
+  - pos: 78
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 78?"
+    v: true
+  - pos: 79
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 79?"
+    v: true
+  - pos: 80
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 80?"
+    v: true
+  - pos: 81
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 81?"
+    v: true
+  - pos: 82
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 82?"
+    v: true
+  - pos: 83
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 83?"
+    v: true
+  - pos: 84
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 84?"
+    v: true
+  - pos: 85
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 85?"
+    v: true
+  - pos: 86
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 86?"
+    v: true
+  - pos: 87
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 87?"
+    v: true
+  - pos: 88
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 88?"
+    v: true
+  - pos: 89
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 89?"
+    v: true
+  - pos: 90
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 90?"
+    v: true
+  - pos: 91
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 91?"
+    v: true
+  - pos: 92
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 92?"
+    v: true
+  - pos: 93
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 93?"
+    v: true
+  - pos: 94
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 94?"
+    v: true
+  - pos: 95
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 95?"
+    v: true
+  - pos: 96
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 96?"
+    v: true
+  - pos: 97
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 97?"
+    v: true
+  - pos: 98
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 98?"
+    v: true
+  - pos: 99
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 99?"
+    v: true
+  - pos: 100
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 100?"
+    v: true
+  - pos: 101
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 101?"
+    v: true
+  - pos: 102
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 102?"
+    v: true
+  - pos: 103
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 103?"
+    v: true
+  - pos: 104
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 104?"
+    v: true
+  - pos: 105
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 105?"
+    v: true
+  - pos: 106
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 106?"
+    v: true
+  - pos: 107
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 107?"
+    v: true
+  - pos: 108
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 108?"
+    v: true
+  - pos: 109
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 109?"
+    v: true
+  - pos: 110
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 110?"
+    v: true
+  - pos: 111
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 111?"
+    v: true
+  - pos: 112
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 112?"
+    v: true
+  - pos: 113
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 113?"
+    v: true
+  - pos: 114
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 114?"
+    v: true
+  - pos: 115
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 115?"
+    v: true
+  - pos: 116
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 116?"
+    v: true
+  - pos: 117
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 117?"
+    v: true
+  - pos: 118
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 118?"
+    v: true
+  - pos: 119
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 119?"
+    v: true
+  - pos: 120
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 120?"
+    v: true
+  - pos: 121
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 121?"
+    v: true
+  - pos: 122
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 122?"
+    v: true
+  - pos: 123
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 123?"
+    v: true
+  - pos: 124
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 124?"
+    v: true
+  - pos: 125
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 125?"
+    v: true
+  - pos: 126
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 126?"
+    v: true
+  - pos: 127
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 127?"
+    v: true
+  - pos: 128
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 128?"
+    v: true
+  - pos: 129
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 129?"
+    v: true
+  - pos: 130
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 130?"
+    v: true
+  - pos: 131
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 131?"
+    v: true
+  - pos: 132
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 132?"
+    v: true
+  - pos: 133
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 133?"
+    v: true
+  - pos: 134
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 134?"
+    v: true
+  - pos: 135
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 135?"
+    v: true
+  - pos: 136
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 136?"
+    v: true
+  - pos: 137
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 137?"
+    v: true
+  - pos: 138
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 138?"
+    v: true
+  - pos: 139
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 139?"
+    v: true
+  - pos: 140
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 140?"
+    v: true
+  - pos: 141
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 141?"
+    v: true
+  - pos: 142
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 142?"
+    v: true
+  - pos: 143
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 143?"
+    v: true
+  - pos: 144
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 144?"
+    v: true
+  - pos: 145
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 145?"
+    v: true
+  - pos: 146
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 146?"
+    v: true
+  - pos: 147
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 147?"
+    v: true
+  - pos: 148
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 148?"
+    v: true
+  - pos: 149
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 149?"
+    v: true
+  - pos: 150
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 150?"
+    v: true
+  - pos: 151
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 151?"
+    v: true
+  - pos: 152
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 152?"
+    v: true
+  - pos: 153
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 153?"
+    v: true
+  - pos: 154
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 154?"
+    v: true
+  - pos: 155
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 155?"
+    v: true
+  - pos: 156
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 156?"
+    v: true
+  - pos: 157
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 157?"
+    v: true
+  - pos: 158
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 158?"
+    v: true
+  - pos: 159
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 159?"
+    v: true
+  - pos: 160
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 160?"
+    v: true
+  - pos: 161
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 161?"
+    v: true
+  - pos: 162
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 162?"
+    v: true
+  - pos: 163
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 163?"
+    v: true
+  - pos: 164
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 164?"
+    v: true
+  - pos: 165
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 165?"
+    v: true
+  - pos: 166
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 166?"
+    v: true
+  - pos: 167
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 167?"
+    v: true
+  - pos: 168
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 168?"
+    v: true
+  - pos: 169
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 169?"
+    v: true
+  - pos: 170
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 170?"
+    v: true
+  - pos: 171
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 171?"
+    v: true
+  - pos: 172
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 172?"
+    v: true
+  - pos: 173
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 173?"
+    v: true
+  - pos: 174
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 174?"
+    v: true
+  - pos: 175
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 175?"
+    v: true
+  - pos: 176
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 176?"
+    v: true
+  - pos: 177
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 177?"
+    v: true
+  - pos: 178
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 178?"
+    v: true
+  - pos: 179
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 179?"
+    v: true
+  - pos: 180
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 180?"
+    v: true
+  - pos: 181
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 181?"
+    v: true
+  - pos: 182
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 182?"
+    v: true
+  - pos: 183
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 183?"
+    v: true
+  - pos: 184
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 184?"
+    v: true
+  - pos: 185
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 185?"
+    v: true
+  - pos: 186
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 186?"
+    v: true
+  - pos: 187
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 187?"
+    v: true
+  - pos: 188
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 188?"
+    v: true
+  - pos: 189
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 189?"
+    v: true
+  - pos: 190
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 190?"
+    v: true
+  - pos: 191
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 191?"
+    v: true
+  - pos: 192
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 192?"
+    v: true
+  - pos: 193
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 193?"
+    v: true
+  - pos: 194
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 194?"
+    v: true
+  - pos: 195
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 195?"
+    v: true
+  - pos: 196
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 196?"
+    v: true
+  - pos: 197
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 197?"
+    v: true
+  - pos: 198
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 198?"
+    v: true
+  - pos: 199
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 199?"
+    v: true
+  - pos: 200
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 200?"
+    v: true
+  - pos: 201
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 201?"
+    v: true
+  - pos: 202
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 202?"
+    v: true
+  - pos: 203
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 203?"
+    v: true
+  - pos: 204
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 204?"
+    v: true
+  - pos: 205
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 205?"
+    v: true
+  - pos: 206
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 206?"
+    v: true
+  - pos: 207
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 207?"
+    v: true
+  - pos: 208
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 208?"
+    v: true
+  - pos: 209
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 209?"
+    v: true
+  - pos: 210
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 210?"
+    v: true
+  - pos: 211
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 211?"
+    v: true
+  - pos: 212
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 212?"
+    v: true
+  - pos: 213
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 213?"
+    v: true
+  - pos: 214
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 214?"
+    v: true
+  - pos: 215
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 215?"
+    v: true
+  - pos: 216
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 216?"
+    v: true
+  - pos: 217
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 217?"
+    v: true
+  - pos: 218
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 218?"
+    v: true
+  - pos: 219
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 219?"
+    v: true
+  - pos: 220
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 220?"
+    v: true
+  - pos: 221
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 221?"
+    v: true
+  - pos: 222
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 222?"
+    v: true
+  - pos: 223
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 223?"
+    v: true
+  - pos: 224
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 224?"
+    v: true
+  - pos: 225
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 225?"
+    v: true
+  - pos: 226
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 226?"
+    v: true
+  - pos: 227
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 227?"
+    v: true
+  - pos: 228
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 228?"
+    v: true
+  - pos: 229
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 229?"
+    v: true
+  - pos: 230
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 230?"
+    v: true
+  - pos: 231
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 231?"
+    v: true
+  - pos: 232
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 232?"
+    v: true
+  - pos: 233
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 233?"
+    v: true
+  - pos: 234
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 234?"
+    v: true
+  - pos: 235
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 235?"
+    v: true
+  - pos: 236
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 236?"
+    v: true
+  - pos: 237
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 237?"
+    v: true
+  - pos: 238
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 238?"
+    v: true
+  - pos: 239
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 239?"
+    v: true
+  - pos: 240
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 240?"
+    v: true
+  - pos: 241
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 241?"
+    v: true
+  - pos: 242
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 242?"
+    v: true
+  - pos: 243
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 243?"
+    v: true
+  - pos: 244
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 244?"
+    v: true
+  - pos: 245
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 245?"
+    v: true
+  - pos: 246
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 246?"
+    v: true
+  - pos: 247
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 247?"
+    v: true
+  - pos: 248
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 248?"
+    v: true
+  - pos: 249
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 249?"
+    v: true
+  - pos: 250
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 250?"
+    v: true
+  - pos: 251
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 251?"
+    v: true
+  - pos: 252
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 252?"
+    v: true
+  - pos: 253
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 253?"
+    v: true
+  - pos: 254
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 254?"
+    v: true
+  - pos: 255
+    q: "Do you perform self-assessments or track your nutrition & diet health indicators at position 255?"
+    v: true
