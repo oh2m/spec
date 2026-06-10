@@ -1,0 +1,647 @@
+pattern: 1
+domain: Cardiovascular
+spec_version: 0.1.1
+status: DRAFT
+authored_by: jamal
+last_revised: 2026-04-30
+polarity_note: "V flag inverts bit storage; question text is never inverted. See spec for details."
+ratification: pending community review
+scope_exclusions:
+  - "extreme congenital defects"
+  - "experimental surgeries"
+  - "neonatal cardiology"
+
+questions:
+
+  # ---- Diagnosed Conditions ----
+  - pos: 1
+    q: "Have you been diagnosed with hypertension (high blood pressure) by a healthcare professional?"
+  - pos: 2
+    q: "Have you been diagnosed with coronary artery disease (narrowed heart arteries) by a healthcare professional?"
+  - pos: 3
+    q: "Have you been diagnosed with heart attack (myocardial infarction) by a healthcare professional?"
+  - pos: 4
+    q: "Have you been diagnosed with atrial fibrillation (AFib or irregular heartbeat) by a healthcare professional?"
+  - pos: 5
+    q: "Have you been diagnosed with heart failure (weakened heart muscle) by a healthcare professional?"
+  - pos: 6
+    q: "Have you been diagnosed with heart valve disease (leaky or tight valves) by a healthcare professional?"
+  - pos: 7
+    q: "Have you been diagnosed with cardiomyopathy (enlarged or stiff heart muscle) by a healthcare professional?"
+  - pos: 8
+    q: "Have you been diagnosed with myocarditis (heart muscle inflammation) by a healthcare professional?"
+  - pos: 9
+    q: "Have you been diagnosed with pericarditis (inflammation of the heart sac) by a healthcare professional?"
+  - pos: 10
+    q: "Have you been diagnosed with congenital heart defect (heart issue from birth) by a healthcare professional?"
+  - pos: 11
+    q: "Have you been diagnosed with peripheral artery disease (PAD or narrowed limb arteries) by a healthcare professional?"
+  - pos: 12
+    q: "Have you been diagnosed with deep vein thrombosis (DVT or blood clot in legs) by a healthcare professional?"
+  - pos: 13
+    q: "Have you been diagnosed with pulmonary embolism (PE or blood clot in lungs) by a healthcare professional?"
+  - pos: 14
+    q: "Have you been diagnosed with carotid artery stenosis (narrowed neck arteries) by a healthcare professional?"
+  - pos: 15
+    q: "Have you been diagnosed with aortic aneurysm (bulge in the body's main artery) by a healthcare professional?"
+  - pos: 16
+    q: "Have you been diagnosed with cardiac arrest (heart suddenly stopped) by a healthcare professional?"
+  - pos: 17
+    q: "Have you been diagnosed with angina (exertional chest pain or pressure) by a healthcare professional?"
+  - pos: 18
+    q: "Have you been diagnosed with rheumatic heart disease by a healthcare professional?"
+  - pos: 19
+    q: "Have you been diagnosed with heart murmur by a healthcare professional?"
+  - pos: 20
+    q: "Have you been diagnosed with microvascular angina by a healthcare professional?"
+  - pos: 21
+    q: "Have you been diagnosed with mitral regurgitation by a healthcare professional?"
+  - pos: 22
+    q: "Have you been diagnosed with tricuspid regurgitation by a healthcare professional?"
+  - pos: 23
+    q: "Have you been diagnosed with pulmonary valve stenosis by a healthcare professional?"
+  - pos: 24
+    q: "Have you been diagnosed with stroke (brain blood clot or bleed) by a healthcare professional?"
+  - pos: 25
+    q: "Have you been diagnosed with transient ischemic attack (TIA or mini-stroke) by a healthcare professional?"
+  - pos: 26
+    q: "Have you been diagnosed with high cholesterol (hyperlipidemia) by a healthcare professional?"
+  - pos: 27
+    q: "Have you been diagnosed with high triglycerides by a healthcare professional?"
+  - pos: 28
+    q: "Have you been diagnosed with varicose veins requiring medical treatment by a healthcare professional?"
+  - pos: 29
+    q: "Have you been diagnosed with pulmonary hypertension (high blood pressure in lung arteries) by a healthcare professional?"
+  - pos: 30
+    q: "Have you been diagnosed with orthostatic hypotension (dizzy when standing up) by a healthcare professional?"
+  - pos: 31
+    q: "Have you been diagnosed with Raynaud's phenomenon (spasms in finger blood vessels) by a healthcare professional?"
+  - pos: 32
+    q: "Have you been diagnosed with renal artery stenosis (narrowed kidney arteries) by a healthcare professional?"
+  - pos: 33
+    q: "Have you been diagnosed with chronic venous insufficiency by a healthcare professional?"
+
+  # ---- Procedures and Interventions ----
+  - pos: 34
+    q: "Have you ever had a angioplasty or stent placement in a heart artery?"
+  - pos: 35
+    q: "Have you ever had a coronary artery bypass graft (CABG or heart bypass) surgery?"
+  - pos: 36
+    q: "Have you ever had a catheter ablation to treat an irregular heartbeat?"
+  - pos: 37
+    q: "Have you ever had a pacemaker implantation?"
+  - pos: 38
+    q: "Have you ever had a implantable cardioverter-defibrillator (ICD) implantation?"
+  - pos: 39
+    q: "Have you ever had a heart valve repair or replacement surgery?"
+  - pos: 40
+    q: "Have you ever had a carotid endarterectomy (surgery to clean neck arteries)?"
+  - pos: 41
+    q: "Have you ever had a surgical treatment for varicose veins?"
+  - pos: 42
+    q: "Have you ever had a cardiac rehabilitation program (supervised exercise post-event)?"
+  - pos: 43
+    q: "Have you ever had a heart transplant?"
+  - pos: 44
+    q: "Have you ever had a aneurysm repair surgery?"
+  - pos: 45
+    q: "Have you ever had a vein stripping or ablation procedure?"
+  - pos: 46
+    q: "Have you ever had a cardioversion procedure (shock or medicine to reset heart rhythm)?"
+  - pos: 47
+    q: "Have you ever had a coronary angiogram (heart catheterization test)?"
+  - pos: 48
+    q: "Have you ever had a echocardiogram (ultrasound of the heart) in the past 12 months?"
+  - pos: 49
+    q: "Have you ever had a electrocardiogram (ECG/EKG) in the past 12 months?"
+  - pos: 50
+    q: "Have you ever had a cardiac stress test in the past 2 years?"
+  - pos: 51
+    q: "Have you ever had a coronary artery calcium (CAC) scan?"
+
+  # ---- Symptoms ----
+  - pos: 52
+    q: "Do you experience or have you had chest pain, pressure, or tightness during physical exertion?"
+  - pos: 53
+    q: "Do you experience or have you had chest pain, pressure, or tightness while resting?"
+  - pos: 54
+    q: "Do you experience or have you had unexplained shortness of breath during light physical activity?"
+  - pos: 55
+    q: "Do you experience or have you had unexplained shortness of breath while resting?"
+  - pos: 56
+    q: "Do you experience or have you had heart palpitations (a fluttering, racing, or pounding heart) in the past month?"
+  - pos: 57
+    q: "Do you experience or have you had sudden, unexplained dizziness or lightheadedness in the past month?"
+  - pos: 58
+    q: "Do you experience or have you had fainted (lost consciousness) in the past 12 months?"
+  - pos: 59
+    q: "Do you experience or have you had swelling in both of your ankles or feet (edema) at the end of the day?"
+  - pos: 60
+    q: "Do you experience or have you had pain, cramping, or fatigue in your calves or thighs when walking that resolves with rest?"
+  - pos: 61
+    q: "Do you experience or have you had extreme, unexplained fatigue during normal daily activities?"
+  - pos: 62
+    q: "Do you experience or have you had unexplained shortness of breath when lying flat in bed (orthopnea)?"
+  - pos: 63
+    q: "Do you experience or have you had woken up at night gasping for breath (paroxysmal nocturnal dyspnea)?"
+  - pos: 64
+    q: "Do you experience or have you had coldness or numbness in your fingers or toes during cold weather?"
+  - pos: 65
+    q: "Do you experience or have you had bluish skin color on your lips, fingers, or toes (cyanosis)?"
+  - pos: 66
+    q: "Do you experience or have you had throbbing or aching pain in your legs that worsens with prolonged standing?"
+  - pos: 67
+    q: "Do you experience or have you had skin changes or ulcers on your lower legs that heal slowly?"
+  - pos: 68
+    q: "Do you experience or have you had racing heart rate (over 100 beats per minute) at rest?"
+  - pos: 69
+    q: "Do you experience or have you had very slow heart rate (under 50 beats per minute) accompanied by fatigue or dizziness?"
+  - pos: 70
+    q: "Do you experience or have you had temporary loss of vision or slurred speech in the past 12 months?"
+  - pos: 71
+    q: "Do you experience or have you had sudden weakness or numbness on one side of your body in the past 12 months?"
+  - pos: 72
+    q: "Do you experience or have you had chest discomfort when exposed to sudden cold air?"
+  - pos: 73
+    q: "Do you experience or have you had heart racing when you are dehydrated?"
+
+  # ---- Medications by Class ----
+  - pos: 74
+    q: "Are you currently taking a blood pressure lowering medication?"
+  - pos: 75
+    q: "Are you currently taking a cholesterol lowering medication (such as a statin)?"
+  - pos: 76
+    q: "Are you currently taking a prescription blood thinner (anticoagulant like warfarin, apixaban)?"
+  - pos: 77
+    q: "Are you currently taking a daily aspirin for heart health?"
+  - pos: 78
+    q: "Are you currently taking a beta-blocker (such as metoprolol, carvedilol)?"
+  - pos: 79
+    q: "Are you currently taking a ACE inhibitor or ARB (such as lisinopril, losartan)?"
+  - pos: 80
+    q: "Are you currently taking a calcium channel blocker (such as amlodipine, diltiazem)?"
+  - pos: 81
+    q: "Are you currently taking a diuretic (water pill, such as furosemide, hydrochlorothiazide)?"
+  - pos: 82
+    q: "Are you currently taking a prescription nitroglycerin for chest pain?"
+  - pos: 83
+    q: "Are you currently taking a antiarrhythmic medication (such as amiodarone, flecainide)?"
+  - pos: 84
+    q: "Are you currently taking a medication for pulmonary hypertension?"
+  - pos: 85
+    q: "Are you currently taking a potassium supplement prescribed for blood pressure?"
+  - pos: 86
+    q: "Are you currently taking a medication for peripheral artery disease (such as cilostazol)?"
+
+  # ---- Lifestyle and Modifiable Risk Factors ----
+  - pos: 87
+    q: "Do you engage in at least 150 minutes of moderate-intensity aerobic exercise per week?"
+    v: true
+  - pos: 88
+    q: "Do you perform muscle-strengthening activities at least 2 days per week?"
+    v: true
+  - pos: 89
+    q: "Do you smoke cigarettes or use tobacco products daily?"
+  - pos: 90
+    q: "Have you smoked cigarettes or used tobacco products in the past 12 months?"
+  - pos: 91
+    q: "Are you exposed to secondhand smoke daily at home or work?"
+  - pos: 92
+    q: "Do you consume more than 2 alcoholic drinks per day (for men) or 1 per day (for women) on average?"
+  - pos: 93
+    q: "Do you consume caffeine (coffee, tea, energy drinks) daily?"
+  - pos: 94
+    q: "Do you add salt to your food at the table daily?"
+  - pos: 95
+    q: "Do you eat fast food or highly processed meals 3 or more times per week?"
+  - pos: 96
+    q: "Do you eat at least 5 servings of fruits and vegetables daily?"
+    v: true
+  - pos: 97
+    q: "Do you eat fatty fish (such as salmon, mackerel) at least twice per week?"
+    v: true
+  - pos: 98
+    q: "Do you sleep less than 6 hours per night on average?"
+  - pos: 99
+    q: "Do you sleep more than 9 hours per night on average?"
+  - pos: 100
+    q: "Do you experience high levels of mental or emotional stress in your daily life?"
+  - pos: 101
+    q: "Do you sit for more than 8 hours per day without standing or walking breaks?"
+  - pos: 102
+    q: "Do you drink at least 8 cups of water daily?"
+    v: true
+  - pos: 103
+    q: "Have you gained more than 10 pounds in the past 12 months?"
+  - pos: 104
+    q: "Do you track your daily calorie or macronutrient intake?"
+    v: true
+  - pos: 105
+    q: "Do you practice a stress-reduction technique (such as meditation, yoga) regularly?"
+    v: true
+  - pos: 106
+    q: "Do you work a night shift or irregular rotating schedule?"
+
+  # ---- Family History ----
+  - pos: 107
+    q: "Do you have a father or brother diagnosed with heart disease before age 55?"
+  - pos: 108
+    q: "Do you have a mother or sister diagnosed with heart disease before age 65?"
+  - pos: 109
+    q: "Do you have a first-degree relative (parent, sibling) who had a stroke?"
+  - pos: 110
+    q: "Do you have a first-degree relative who died suddenly from a suspected heart issue before age 50?"
+  - pos: 111
+    q: "Do you have a family history of high cholesterol (familial hypercholesterolemia)?"
+  - pos: 112
+    q: "Do you have a family history of a cardiac arrhythmia (such as Long QT syndrome)?"
+  - pos: 113
+    q: "Do you have a family history of an aortic aneurysm?"
+  - pos: 114
+    q: "Do you have a first-degree relative with a pacemaker or ICD?"
+  - pos: 115
+    q: "Do you have a family history of congenital heart defects?"
+  - pos: 116
+    q: "Do you have a first-degree relative who had a heart attack at any age?"
+
+  # ---- Monitoring and Self-Tracking ----
+  - pos: 117
+    q: "Do you own a home blood pressure monitor?"
+    v: true
+  - pos: 118
+    q: "Do you measure your blood pressure at home at least once per week?"
+    v: true
+  - pos: 119
+    q: "Do you wear a smartwatch or fitness tracker that monitors heart rate daily?"
+    v: true
+  - pos: 120
+    q: "Does your smartwatch monitor your Heart Rate Variability (HRV)?"
+    v: true
+  - pos: 121
+    q: "Does your smartwatch monitor your resting heart rate?"
+    v: true
+  - pos: 122
+    q: "Do you use a smartwatch to record a single-lead ECG?"
+    v: true
+  - pos: 123
+    q: "Have you ever been notified by a wearable device of an irregular heart rhythm?"
+  - pos: 124
+    q: "Do you track your body weight daily?"
+    v: true
+  - pos: 125
+    q: "Do you check your pulse manually (resting heart rate) at least once per week?"
+    v: true
+  - pos: 126
+    q: "Do you use a mobile app to log your cardiovascular health metrics?"
+    v: true
+
+  # ---- Recent Events (Last 12 Months) ----
+  - pos: 127
+    q: "Have you had a heart attack in the past 12 months?"
+  - pos: 128
+    q: "Have you had a stroke in the past 12 months?"
+  - pos: 129
+    q: "Have you been hospitalized for a heart-related condition in the past 12 months?"
+  - pos: 130
+    q: "Have you been diagnosed with a new heart arrhythmia in the past 12 months?"
+  - pos: 131
+    q: "Have you started a new prescription medication for blood pressure in the past 12 months?"
+  - pos: 132
+    q: "Have you started a new prescription medication for high cholesterol in the past 12 months?"
+  - pos: 133
+    q: "Have you had a surgical procedure on your heart or blood vessels in the past 12 months?"
+  - pos: 134
+    q: "Have you had an unexplained episode of severe chest pain requiring medical care in the past 12 months?"
+  - pos: 135
+    q: "Have you had an unexplained episode of severe shortness of breath requiring medical care in the past 12 months?"
+  - pos: 136
+    q: "Have you been advised by a doctor to restrict your physical activity due to a heart concern in the past 12 months?"
+
+  # ---- Vascular Health Beyond the Heart ----
+  - pos: 137
+    q: "Have you ever had peripheral artery disease (PAD) in your legs?"
+  - pos: 138
+    q: "Have you ever had deep vein thrombosis (DVT) in your legs or arms?"
+  - pos: 139
+    q: "Have you ever had pulmonary embolism (PE) in your lungs?"
+  - pos: 140
+    q: "Have you ever had varicose veins that cause swelling, aching, or skin changes?"
+  - pos: 141
+    q: "Have you ever had carotid artery stenosis (narrowing of the neck arteries)?"
+  - pos: 142
+    q: "Have you ever had abdominal aortic aneurysm?"
+  - pos: 143
+    q: "Have you ever had claudication (leg pain when walking that goes away when standing still)?"
+  - pos: 144
+    q: "Have you ever had vein surgery, laser ablation, or sclerotherapy?"
+  - pos: 145
+    q: "Have you ever had ulcer or sore on your foot or leg that took more than 4 weeks to heal?"
+  - pos: 146
+    q: "Have you ever had recurrent swelling in only one of your legs?"
+
+  # ---- Diagnosed Conditions ----
+  - pos: 147
+    q: "Has a doctor told you that your systolic blood pressure (top number) is regularly over 130?"
+  - pos: 148
+    q: "Has a doctor told you that your diastolic blood pressure (bottom number) is regularly over 80?"
+  - pos: 149
+    q: "Has a doctor told you that your resting heart rate is regularly over 80 beats per minute?"
+  - pos: 150
+    q: "Has a doctor told you that your resting heart rate is regularly under 60 beats per minute?"
+
+  # ---- Symptoms ----
+  - pos: 151
+    q: "Do you experience a rapid heart rate (racing heart) after drinking caffeine?"
+  - pos: 152
+    q: "Do you experience a rapid heart rate (racing heart) after drinking alcohol?"
+  - pos: 153
+    q: "Do you experience an irregular heart rhythm (skipped beats) when stressed?"
+  - pos: 154
+    q: "Do you experience an irregular heart rhythm (skipped beats) when sleep-deprived?"
+
+  # ---- Lifestyle and Modifiable Risk Factors ----
+  - pos: 155
+    q: "Do you perform at least 75 minutes of vigorous-intensity aerobic exercise per week?"
+    v: true
+  - pos: 156
+    q: "Do you perform high-intensity interval training (HIIT) at least once per week?"
+    v: true
+  - pos: 157
+    q: "Do you walk at least 10,000 steps per day on average?"
+    v: true
+  - pos: 158
+    q: "Do you walk at least 5,000 steps per day on average?"
+    v: true
+
+  # ---- Monitoring and Self-Tracking ----
+  - pos: 159
+    q: "Do you track your step count daily using a phone or wearable?"
+    v: true
+  - pos: 160
+    q: "Do you monitor your active heart rate zones during workouts?"
+    v: true
+  - pos: 161
+    q: "Do you track your VO2 max or cardiorespiratory fitness level?"
+    v: true
+
+  # ---- Lifestyle and Modifiable Risk Factors ----
+  - pos: 162
+    q: "Do you participate in endurance sports (such as running, cycling, swimming)?"
+    v: true
+  - pos: 163
+    q: "Do you eat red meat (beef, pork, lamb) daily?"
+  - pos: 164
+    q: "Do you eat processed meats (bacon, sausage, deli meats) 3 or more times per week?"
+  - pos: 165
+    q: "Do you cook meals at home from fresh ingredients at least 5 days per week?"
+    v: true
+  - pos: 166
+    q: "Do you use olive oil as your primary cooking oil?"
+    v: true
+  - pos: 167
+    q: "Do you consume sugar-sweetened beverages (soda, sweetened tea) daily?"
+  - pos: 168
+    q: "Do you eat nuts or seeds (such as walnuts, almonds) daily?"
+    v: true
+  - pos: 169
+    q: "Do you eat whole grains (such as oats, brown rice) daily?"
+    v: true
+  - pos: 170
+    q: "Do you take an omega-3 fish oil supplement daily?"
+    v: true
+  - pos: 171
+    q: "Do you take a coenzyme Q10 (CoQ10) supplement daily?"
+    v: true
+  - pos: 172
+    q: "Do you take a garlic supplement daily for cardiovascular health?"
+    v: true
+
+  # ---- Procedures and Interventions ----
+  - pos: 173
+    q: "Have you had a heart attack more than 5 years ago?"
+  - pos: 174
+    q: "Have you had a stroke more than 5 years ago?"
+
+  # ---- Lifestyle and Modifiable Risk Factors ----
+  - pos: 175
+    q: "Have you had heart bypass surgery more than 5 years ago?"
+  - pos: 176
+    q: "Have you had stent placement surgery more than 5 years ago?"
+
+  # ---- Symptoms ----
+  - pos: 177
+    q: "Do you experience chest pressure when walking in cold weather?"
+  - pos: 178
+    q: "Do you experience chest pressure when walking up a hill or incline?"
+  - pos: 179
+    q: "Do you experience shortness of breath when walking up a hill or incline?"
+  - pos: 180
+    q: "Do you experience shortness of breath when carrying heavy groceries?"
+  - pos: 181
+    q: "Do you experience palpitations during or immediately after workouts?"
+  - pos: 182
+    q: "Do you experience lightheadedness when standing up quickly from a lying position?"
+  - pos: 183
+    q: "Do you experience leg pain or fatigue that prevents you from walking 100 yards?"
+  - pos: 184
+    q: "Do you experience numbness or weakness in your arms when active?"
+
+  # ---- Monitoring and Self-Tracking ----
+  - pos: 185
+    q: "Have you had a 24-hour Holter monitor or cardiac patch test?"
+
+  # ---- Procedures and Interventions ----
+  - pos: 186
+    q: "Have you had a CT angiogram of your coronary arteries?"
+  - pos: 187
+    q: "Have you had a cardiac MRI?"
+  - pos: 188
+    q: "Have you had a carotid artery ultrasound?"
+  - pos: 189
+    q: "Have you had an ankle-brachial index (ABI) test for leg blood flow?"
+  - pos: 190
+    q: "Have you had a blood test for hs-CRP (a marker of heart inflammation) in the past 2 years?"
+  - pos: 191
+    q: "Have you had a blood test for BNP or NT-proBNP (heart failure markers) ever?"
+  - pos: 192
+    q: "Have you had a blood test for Apolipoprotein B (ApoB) or Lp(a) cholesterol markers?"
+
+  # ---- Symptoms ----
+  - pos: 193
+    q: "Do you experience chest tightness at high altitudes?"
+  - pos: 194
+    q: "Do you experience shortness of breath at high altitudes?"
+
+  # ---- Lifestyle and Modifiable Risk Factors ----
+  - pos: 195
+    q: "Do you wake up in the morning feeling unrefreshed, with a headache?"
+  - pos: 196
+    q: "Has anyone observed you stop breathing or gasp during sleep?"
+  - pos: 197
+    q: "Do you sleep with two or more pillows to help you breathe easier?"
+  - pos: 198
+    q: "Have you had superficial thrombophlebitis (clot in a vein near the skin)?"
+  - pos: 199
+    q: "Do you have a history of chronic swelling in both of your lower legs?"
+  - pos: 200
+    q: "Do you have visible spider veins on your legs?"
+  - pos: 201
+    q: "Do you wear prescription compression stockings daily or weekly?"
+    v: true
+  - pos: 202
+    q: "Do you elevate your legs at the end of the day to reduce swelling?"
+    v: true
+
+  # ---- Medications by Class ----
+  - pos: 203
+    q: "Do you take a blood pressure medication specifically in the morning?"
+  - pos: 204
+    q: "Do you take a blood pressure medication specifically at night?"
+
+  # ---- Monitoring and Self-Tracking ----
+  - pos: 205
+    q: "Do you regularly monitor your blood pressure before taking your blood pressure medication?"
+    v: true
+
+  # ---- Symptoms ----
+  - pos: 206
+    q: "Have you experienced side effects from blood pressure medication (like cough, dizziness)?"
+  - pos: 207
+    q: "Have you experienced side effects from statin medication (like muscle pain)?"
+
+  # ---- Lifestyle and Modifiable Risk Factors ----
+  - pos: 208
+    q: "Have you had your blood pressure checked by a doctor in the past 6 months?"
+    v: true
+  - pos: 209
+    q: "Have you had your cholesterol levels checked by a doctor in the past 12 months?"
+    v: true
+  - pos: 210
+    q: "Do you take an over-the-counter blood thinner (like low-dose aspirin) without a prescription?"
+
+  # ---- Diagnosed Conditions ----
+  - pos: 211
+    q: "Have you been diagnosed with mitral valve prolapse?"
+  - pos: 212
+    q: "Have you been diagnosed with aortic stenosis?"
+  - pos: 213
+    q: "Have you been diagnosed with heart block (first, second, or third degree)?"
+  - pos: 214
+    q: "Have you been diagnosed with bundle branch block (left or right)?"
+  - pos: 215
+    q: "Have you been diagnosed with postural orthostatic tachycardia syndrome (POTS)?"
+  - pos: 216
+    q: "Have you been diagnosed with vasovagal syncope (fainting due to certain triggers)?"
+  - pos: 217
+    q: "Have you been diagnosed with blood clotting disorder (like Factor V Leiden)?"
+
+  # ---- Lifestyle and Modifiable Risk Factors ----
+  - pos: 218
+    q: "Do you consume more than 3 cups of coffee daily?"
+  - pos: 219
+    q: "Do you consume energy drinks weekly or daily?"
+  - pos: 220
+    q: "Do you drink sugar-sweetened soda daily?"
+  - pos: 221
+    q: "Do you eat dark chocolate (70% or more cacao) regularly for vascular health?"
+    v: true
+  - pos: 222
+    q: "Do you drink green tea daily?"
+    v: true
+  - pos: 223
+    q: "Do you consume oatmeal or oat bran weekly or daily for cholesterol health?"
+    v: true
+  - pos: 224
+    q: "Do you follow a Mediterranean-style diet?"
+    v: true
+  - pos: 225
+    q: "Do you follow a low-sodium diet?"
+    v: true
+  - pos: 226
+    q: "Do you follow a ketogenic or very low-carbohydrate diet?"
+  - pos: 227
+    q: "Do you perform yoga or deep breathing exercises weekly or daily?"
+    v: true
+
+  # ---- Monitoring and Self-Tracking ----
+  - pos: 228
+    q: "Do you log your resting heart rate in a spreadsheet or app?"
+    v: true
+  - pos: 229
+    q: "Do you track your blood pressure in a spreadsheet or app?"
+    v: true
+  - pos: 230
+    q: "Do you track your daily active calorie burn using a wearable device?"
+    v: true
+  - pos: 231
+    q: "Do you monitor your heart rate recovery (HRR) after intense exercise?"
+    v: true
+  - pos: 232
+    q: "Do you track your sleep stages (deep, REM, light) using a wearable device?"
+    v: true
+
+  # ---- Family History ----
+  - pos: 233
+    q: "Do you have a first-degree relative who had a heart attack before age 60?"
+  - pos: 234
+    q: "Do you have a first-degree relative who had a stroke before age 60?"
+
+  # ---- Diagnosed Conditions ----
+  - pos: 235
+    q: "Do you have a first-degree relative diagnosed with high blood pressure before age 40?"
+
+  # ---- Family History ----
+  - pos: 236
+    q: "Do you have a family history of sudden unexplained infant death (SIDS)?"
+  - pos: 237
+    q: "Do you have a family history of cardiomyopathy?"
+  - pos: 238
+    q: "Do you have a family history of a cardiac pacemaker or defibrillator?"
+  - pos: 239
+    q: "Do you have a first-degree relative who underwent coronary bypass surgery?"
+  - pos: 240
+    q: "Do you have a first-degree relative who underwent angioplasty or stent placement?"
+
+  # ---- Lifestyle and Modifiable Risk Factors ----
+  - pos: 241
+    q: "Do you get out of breath more easily than others of your age and fitness level?"
+  - pos: 242
+    q: "Do you take longer than 5 minutes for your heart rate to return to normal after moderate exercise?"
+
+  # ---- Symptoms ----
+  - pos: 243
+    q: "Do you experience chest pressure or pain when carrying items weighing over 20 pounds?"
+  - pos: 244
+    q: "Do you experience shortness of breath when carrying items weighing over 20 pounds?"
+  - pos: 245
+    q: "Do you experience chest pressure or pain when walking up a standard flight of stairs?"
+  - pos: 246
+    q: "Do you experience shortness of breath when walking up a standard flight of stairs?"
+
+  # ---- Diagnosed Conditions ----
+  - pos: 247
+    q: "Have you ever been told by a doctor that you have an enlarged heart?"
+  - pos: 248
+    q: "Have you ever been told by a doctor that you have fluid around your heart?"
+  - pos: 249
+    q: "Have you ever been told by a doctor that you have fluid in your lungs due to heart issues?"
+
+  # ---- Lifestyle and Modifiable Risk Factors ----
+  - pos: 250
+    q: "Do you currently carry a nitroglycerin prescription with you at all times?"
+  - pos: 251
+    q: "Do you wear a medical alert bracelet or carry a card for a heart condition or blood thinners?"
+
+  # ---- Self-Monitoring ----
+  - pos: 252
+    q: "Do you track your daily resting statistics related to cardiovascular health?"
+    v: true
+  - pos: 253
+    q: "Do you feel that your cardiovascular health has improved over the past 12 months?"
+    v: true
+  - pos: 254
+    q: "Do you log your cardiovascular symptoms weekly in a journal or app?"
+    v: true
+  - pos: 255
+    q: "Have you discussed your cardiovascular health goals with a specialist?"
+    v: true
