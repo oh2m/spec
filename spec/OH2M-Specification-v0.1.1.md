@@ -597,7 +597,36 @@ The specification is maintained at github.com/oh2m/spec. Contributions welcome v
 
 OH2M is an independent open standard. It is not owned by any company, platform, or wearable manufacturer. The goal is eventual transfer to a neutral standards body as adoption grows.
 
-# **Appendix A: Open Questions for Community**
+# **Appendix A: Beyond Static Questions**
+
+## **A.1 The Architecture**
+The Layer 2 field in an Open Heart File is a general-purpose 256-bit container. Mathematically, 256 bits can represent $2^{256}$ distinct states. Under the static-question mode used for patterns 1–16, position 0 is reserved at the spec level, leaving 255 bits ($2^{255}$ states) for yes/no question answers. However, patterns 17–255 are implementer-defined and are not constrained to yes/no questions; they may use the full 256-bit capacity ($2^{256}$ states) in any manner defined by the implementer's published contract.
+
+A Layer 2 block can be visualized as a 16x16 grid of cells, representing the 256 bits. This grid is identical for all implementers; what changes is the contract between the sender and receiver defining the meaning of the cells. The static-question contract is one valid choice (and the one community-ratified for patterns 1–16), but other contracts are equally valid for patterns 17–255.
+
+## **A.2 Static-Question Mode Is Not Universal**
+The V flag for bit inversion, the mask field designating answered/unanswered slots, the question-numbering convention (1–255), and the position-0 reservation are all properties of the **static-question mode** used by the open reference patterns 1–16.
+
+Implementers using patterns 17–255 are free to define alternative contracts where the 256 bits, the mask, and position 0 are interpreted differently (e.g., as hashes, timeline streams, or path coordinates in a decision tree). The OH2M file format guarantees that the bits are carried faithfully from sender to receiver; the semantic encoding of those bits is defined entirely by the implementer's published contract.
+
+## **A.3 Position 0 in Non-Static Patterns**
+In implementer-defined patterns (17–255), the implementer may utilize all 256 bits, including position 0. The position-0 reservation is a convention for static-question patterns to preserve a structural slot for future spec revisions within that mode. Implementers who want forward-compatibility with future static-mode tooling may choose to honor the reservation, but this is strictly optional.
+
+## **A.4 Worked Examples**
+
+### **Example 1 — Genetic Data Hash (Pattern 17, hypothetical)**
+A genomics service provider defines Pattern 17 as a SHA-256 hash of a user's full genetic dataset. The entire 256-bit field (including position 0) holds the hash value directly. A reader equipped with the provider's published contract knows to interpret these 256 bits as a verifiable reference to a dataset hosted securely off-file. A reader without the contract sees only a meaningless sequence of 256 bits.
+
+### **Example 2 — Adaptive Question-Tree Path (Pattern 18, hypothetical)**
+A health platform defines Pattern 18 as a traversal path through a binary decision tree of health questions. Each bit represents a branch decision (0 for left, 1 for right). The 256 bits represent a sequence of 256 binary choices, allowing $2^{256}$ distinct paths through the tree. The platform publishes the tree structure as its contract. A reader with the contract can reconstruct the user's detailed questionnaire path—including conditional follow-up questions that were only asked based on prior answers. A reader without the contract sees only noise.
+
+### **Example 3 — Life Event Timeline (Pattern 19, hypothetical)**
+A wearable manufacturer defines Pattern 19 as a compressed life event timeline. The first 64 bits encode a Unix timestamp anchor, and the remaining 192 bits encode a sequence of event codes and durations relative to that anchor. The manufacturer publishes the event code table. A reader with the contract can reconstruct a highly compressed history of physical events. A reader without the contract sees only random bits.
+
+## **A.5 Closing Statement**
+The static-question mode of patterns 1–16 is one specific contract chosen for community decodability—any reader with the OH2M spec can decode it. Patterns 17–255 exist precisely so the spec does not constrain what implementers can do with the bits. OH2M defines the container; the encoding is the implementer's choice. The community should not be confused about this: patterns 1–16 are stable, community-debated, openly decodable. What you do with patterns 17–255 is on you and your users.
+
+# **Appendix B: Open Questions for Community**
 
 - Should the qset field be required for implementer chunks (patterns 17-255)?
 - Should there be a standard format for versioned question key feeds?
@@ -608,7 +637,8 @@ OH2M is an independent open standard. It is not owned by any company, platform, 
 - How should user consent and data provenance be recorded in the file?
 - Should OH2M define a standard API response format for streaming .oh2m data?
 - Should there be a recommended maximum number of Layer 2 chunks per file?
-# **Appendix B: Revision History**
+
+# **Appendix C: Revision History**
 
 | **Version** | **Date** | **Notes** |
 | --- | --- | --- |
