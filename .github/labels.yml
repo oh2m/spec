@@ -1,0 +1,63 @@
+# OH2M GitHub Labels
+# Apply with: gh label import .github/labels.yml
+# Or create manually via Settings > Labels.
+
+- name: bug
+  color: "d73a4a"
+  description: Something is broken in the spec, tooling, or reference files
+
+- name: schema-proposal
+  color: "0075ca"
+  description: Proposal to add or change the file format or spec
+
+- name: open-questions
+  color: "e4e669"
+  description: Related to the 4,080 open reference questions (Patterns 1–16)
+
+- name: correction
+  color: "f9d0c4"
+  description: Fix to an existing question — phrasing, scope, V flag, or removal
+
+- name: spec-ambiguity
+  color: "cc317c"
+  description: Part of the spec text that allows two valid readings
+
+- name: documentation
+  color: "0075ca"
+  description: Docs gap, unclear explanation, or incorrect reference
+
+- name: ecosystem
+  color: "bfd4f2"
+  description: Apps, implementations, integrations built on OH2M
+
+- name: reference-implementation
+  color: "cfd3d7"
+  description: A parser, writer, SDK, or official tooling
+
+- name: security
+  color: "e4e669"
+  description: Security, privacy, or threat model concern
+
+- name: question
+  color: "d4edda"
+  description: General question about the spec or OH2M
+
+- name: needs-discussion
+  color: "d876e3"
+  description: Requires community input before action can be taken
+
+- name: good-first-issue
+  color: "7057ff"
+  description: Good starting point for new contributors
+
+- name: wontfix
+  color: "ffffff"
+  description: Considered and decided not to change
+
+- name: duplicate
+  color: "cfd3d7"
+  description: Already reported
+
+- name: v0.2
+  color: "0052cc"
+  description: Targeted for the v0.2 spec revision

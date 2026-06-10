@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: OH2M Specification (full)
+    url: https://github.com/oh2m/spec/blob/main/OH2M-Specification-v0.1.1.docx
+    about: The full technical spec — file format, layers, patterns, mask, manifest, cipher system.
+  - name: Open reference questions (/open-questions)
+    url: https://github.com/oh2m/spec/tree/main/open-questions
+    about: The 4,080 working-draft questions for Patterns 1–16.
+  - name: oh2m.org
+    url: https://oh2m.org
+    about: Project home.

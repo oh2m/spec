@@ -1,0 +1,68 @@
+name: Reference Implementation
+description: Register or announce an OH2M implementation — parser, writer, adapter, or tooling.
+title: "[Implementation] "
+labels: ["ecosystem", "reference-implementation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        OH2M is built for implementation. Share what you've built — parsers, writers, adapters, SDKs, CLI tools, or anything that speaks `.oh2m`. We'll list it in the ecosystem index.
+
+  - type: input
+    id: project-name
+    attributes:
+      label: Project name
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      placeholder: "https://github.com/..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - Parser (reads .oh2m files)
+        - Writer (produces .oh2m files)
+        - Both parser and writer
+        - Adapter (converts from/to another format)
+        - SDK / library
+        - CLI tool
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: layer-support
+    attributes:
+      label: Layer support
+      multiple: true
+      options:
+        - Layer 1
+        - Layer 2 (open reference patterns 1–16)
+        - Layer 2 (custom patterns)
+        - Layer 3
+    validations:
+      required: false
+
+  - type: input
+    id: language
+    attributes:
+      label: Language / platform
+      placeholder: "Python, JavaScript, Rust, Go..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Anything else worth knowing — maturity, limitations, license.
+    validations:
+      required: false

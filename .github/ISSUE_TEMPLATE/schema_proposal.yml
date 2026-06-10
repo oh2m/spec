@@ -1,0 +1,54 @@
+name: Schema Proposal
+description: Propose a change or addition to the OH2M spec or file format.
+title: "[Schema] "
+labels: ["schema-proposal", "needs-discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Schema proposals shape the standard for everyone. Please describe your proposal clearly, including the problem it solves and any tradeoffs.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or gap
+      description: What does the current spec not handle well?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe what you'd like to add or change.
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why is this the right approach? What alternatives did you consider?
+    validations:
+      required: false
+
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Tradeoffs and risks
+      description: What does this break or complicate?
+    validations:
+      required: false
+
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Which layer does this affect?
+      options:
+        - Layer 1 (open / human-readable)
+        - Layer 2 (bit field / patterns)
+        - Layer 3 (hash / cryptography)
+        - Cross-layer / file format
+        - Governance / spec process
+    validations:
+      required: false

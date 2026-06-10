@@ -1,0 +1,43 @@
+name: Spec Ambiguity
+description: Flag a part of the spec that two implementers could read differently.
+title: "[Ambiguity] "
+labels: ["spec-ambiguity", "needs-discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If the spec text allows two different valid interpretations, that's a bug. These issues are high priority — interoperability depends on a single unambiguous reading.
+
+  - type: input
+    id: location
+    attributes:
+      label: Spec location
+      placeholder: "OH2M-Specification-v0.1.1, section 4.2 — Layer 2 Mask"
+    validations:
+      required: true
+
+  - type: textarea
+    id: ambiguity
+    attributes:
+      label: What are the two readings?
+      description: Describe both interpretations as clearly as possible. A good report names the exact sentence or clause that causes the ambiguity.
+      placeholder: |
+        Reading A: the mask bit applies before the V flag, so a masked-out slot is ignored before inversion.
+        Reading B: the V flag applies first, and the mask determines whether the inverted result is included.
+    validations:
+      required: true
+
+  - type: textarea
+    id: preferred
+    attributes:
+      label: Which reading do you believe is correct, and why?
+    validations:
+      required: false
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Implementation impact
+      description: What breaks or behaves differently depending on which reading is used?
+    validations:
+      required: false

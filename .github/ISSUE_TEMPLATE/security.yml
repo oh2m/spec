@@ -1,0 +1,28 @@
+name: Security Issue
+description: Report a security vulnerability — please read the security policy first.
+title: "[Security] "
+labels: ["security"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Please do not report security vulnerabilities in public Issues.**
+
+        Read [`SECURITY.md`](../SECURITY.md) for the private reporting process. This template is for non-sensitive security-adjacent questions — for example, a question about the spec's privacy properties or a concern about how OH2M interacts with a specific threat model.
+
+        If your report contains a specific vulnerability, close this issue and follow the private process in `SECURITY.md`.
+
+  - type: textarea
+    id: concern
+    attributes:
+      label: Security concern or question
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Threat model, affected layers, relevant implementation details.
+    validations:
+      required: false

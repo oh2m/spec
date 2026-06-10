@@ -1,0 +1,72 @@
+name: Domain Question Correction
+description: Report a question that is wrong, ambiguous, poorly scoped, or should be removed.
+title: "[Question-Fix] Pattern NN, pos NN — "
+labels: ["open-questions", "correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Community review is how the open reference questions improve. Flag anything that's unclear, incorrect, out of scope, or that conflicts with an existing screening instrument.
+
+  - type: dropdown
+    id: pattern
+    attributes:
+      label: Pattern
+      options:
+        - "1 — Cardiovascular"
+        - "2 — Metabolic"
+        - "3 — Musculoskeletal"
+        - "4 — Respiratory"
+        - "5 — Mental Health"
+        - "6 — Reproductive"
+        - "7 — Nutrition & Diet"
+        - "8 — Substances"
+        - "9 — Recent Medical Activity"
+        - "10 — Demographics & Context"
+        - "11 — Fitness History"
+        - "12 — Recovery & Sleep"
+        - "13 — Environmental"
+        - "14 — Genetics & Family History"
+        - "15 — Immunological"
+        - "16 — Reserved"
+    validations:
+      required: true
+
+  - type: input
+    id: position
+    attributes:
+      label: Bit position
+      placeholder: "e.g. 47"
+    validations:
+      required: false
+
+  - type: textarea
+    id: current-question
+    attributes:
+      label: Current question text
+      description: Copy the question as it currently reads.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Type of issue
+      options:
+        - Ambiguous or misleading phrasing
+        - Not answerable as a single yes/no bit
+        - Out of scope for this pattern
+        - Conflicts with a validated screening instrument (verbatim reproduction concern)
+        - V flag polarity is wrong or missing
+        - Should be removed entirely
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Explain the problem and, if possible, suggest a fix.
+    validations:
+      required: true

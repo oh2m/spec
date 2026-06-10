@@ -1,0 +1,64 @@
+name: Domain Question Contribution
+description: Propose new questions for a pattern in the open reference set (Patterns 1–16).
+title: "[Question] Pattern NN — "
+labels: ["open-questions", "needs-discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The 4,080 open reference questions are the community's most important contribution right now. Questions must be answerable as a single yes/no bit. See the spec and existing files in `/open-questions/` for formatting conventions.
+
+  - type: dropdown
+    id: pattern
+    attributes:
+      label: Pattern
+      options:
+        - "1 — Cardiovascular"
+        - "2 — Metabolic"
+        - "3 — Musculoskeletal"
+        - "4 — Respiratory"
+        - "5 — Mental Health"
+        - "6 — Reproductive"
+        - "7 — Nutrition & Diet"
+        - "8 — Substances"
+        - "9 — Recent Medical Activity"
+        - "10 — Demographics & Context"
+        - "11 — Fitness History"
+        - "12 — Recovery & Sleep"
+        - "13 — Environmental"
+        - "14 — Genetics & Family History"
+        - "15 — Immunological"
+        - "16 — Reserved (community proposals)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: questions
+    attributes:
+      label: Proposed question(s)
+      description: |
+        Write each question in plain language, answerable as yes/no. Include the bit position you suggest (1–255), or leave blank if flexible. Use the format:
+        ```
+        pos: 42
+        q: "Have you been diagnosed with..."
+        v: false  # optional — set true if bit polarity should be inverted
+        notes: "Optional clinical context."
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why does this question add information value at the population level?
+    validations:
+      required: false
+
+  - type: textarea
+    id: expertise
+    attributes:
+      label: Your expertise (optional)
+      description: Clinical background, lived experience, research area — helps reviewers weight the proposal.
+    validations:
+      required: false

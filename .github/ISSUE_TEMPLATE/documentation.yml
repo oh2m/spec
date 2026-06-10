@@ -1,0 +1,38 @@
+name: Documentation
+description: Report unclear, missing, or incorrect documentation.
+title: "[Docs] "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Good documentation makes the difference between a spec people use and one they ignore. Point us at anything that's confusing, incomplete, or missing.
+
+  - type: input
+    id: location
+    attributes:
+      label: Where is the problem?
+      placeholder: "README.md, spec section 3.2, /open-questions/01-cardiovascular.yml..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of issue
+      options:
+        - Unclear or confusing explanation
+        - Missing information
+        - Incorrect information
+        - Broken link or reference
+        - Formatting or structure problem
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What's wrong and what would help?
+    validations:
+      required: true

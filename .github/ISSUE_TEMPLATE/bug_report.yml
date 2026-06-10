@@ -1,0 +1,54 @@
+name: Bug Report
+description: Report a bug in the spec, a reference file, or official tooling.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. Please fill out the fields below as completely as you can.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug clearly.
+      placeholder: "When parsing a Layer 2 block with pattern 3, the mask field is misread if..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      description: What should have happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Minimal steps to reproduce the issue.
+      placeholder: |
+        1. Open an `.oh2m` file with...
+        2. Parse the Layer 2 block...
+        3. Observe...
+    validations:
+      required: false
+
+  - type: input
+    id: spec-version
+    attributes:
+      label: Spec version
+      placeholder: "v0.1.1"
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Relevant file snippets, output, or links.
+    validations:
+      required: false
