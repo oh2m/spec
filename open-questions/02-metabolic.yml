@@ -1,0 +1,703 @@
+pattern: 2
+domain: Metabolic
+spec_version: 0.1.1
+status: DRAFT
+authored_by: jamal
+last_revised: 2026-04-30
+polarity_note: "V flag inverts bit storage; question text is never inverted. See spec for details."
+ratification: pending community review
+scope_exclusions:
+  - "rare pediatric inborn errors of metabolism"
+  - "active oncological endocrine tumors"
+
+questions:
+
+  # ---- Diagnosed Conditions ----
+  - pos: 1
+    q: "Have you been diagnosed with Type 1 diabetes by a healthcare professional?"
+  - pos: 2
+    q: "Have you been diagnosed with Type 2 diabetes by a healthcare professional?"
+  - pos: 3
+    q: "Have you been diagnosed with prediabetes (borderline diabetes) by a healthcare professional?"
+  - pos: 4
+    q: "Have you been diagnosed with gestational diabetes (diabetes during pregnancy) by a healthcare professional?"
+  - pos: 5
+    q: "Have you been diagnosed with metabolic syndrome by a healthcare professional?"
+  - pos: 6
+    q: "Have you been diagnosed with non-alcoholic fatty liver disease (NAFLD or fatty liver) by a healthcare professional?"
+  - pos: 7
+    q: "Have you been diagnosed with non-alcoholic steatohepatitis (NASH or inflamed fatty liver) by a healthcare professional?"
+  - pos: 8
+    q: "Have you been diagnosed with hypothyroidism (underactive thyroid) by a healthcare professional?"
+  - pos: 9
+    q: "Have you been diagnosed with hyperthyroidism (overactive thyroid) by a healthcare professional?"
+  - pos: 10
+    q: "Have you been diagnosed with Hashimoto's thyroiditis (autoimmune low thyroid) by a healthcare professional?"
+  - pos: 11
+    q: "Have you been diagnosed with Graves' disease (autoimmune high thyroid) by a healthcare professional?"
+  - pos: 12
+    q: "Have you been diagnosed with polycystic ovary syndrome (PCOS) by a healthcare professional?"
+  - pos: 13
+    q: "Have you been diagnosed with gout by a healthcare professional?"
+  - pos: 14
+    q: "Have you been diagnosed with Cushing's syndrome (excess cortisol) by a healthcare professional?"
+  - pos: 15
+    q: "Have you been diagnosed with Addison's disease (cortisol deficiency) by a healthcare professional?"
+  - pos: 16
+    q: "Have you been diagnosed with hyperparathyroidism (excess parathyroid hormone) by a healthcare professional?"
+  - pos: 17
+    q: "Have you been diagnosed with pituitary tumor or disorder by a healthcare professional?"
+  - pos: 18
+    q: "Have you been diagnosed with adrenal insufficiency or disorder by a healthcare professional?"
+  - pos: 19
+    q: "Have you been diagnosed with acromegaly (excess growth hormone) by a healthcare professional?"
+  - pos: 20
+    q: "Have you been diagnosed with insulin resistance by a healthcare professional?"
+  - pos: 21
+    q: "Have you been diagnosed with hypoglycemia (recurrent low blood sugar) without diabetes by a healthcare professional?"
+  - pos: 22
+    q: "Have you been diagnosed with thyroid nodule or goiter by a healthcare professional?"
+  - pos: 23
+    q: "Have you been diagnosed with hyperaldosteronism by a healthcare professional?"
+  - pos: 24
+    q: "Have you been diagnosed with pheochromocytoma by a healthcare professional?"
+  - pos: 25
+    q: "Have you been diagnosed with diabetes insipidus by a healthcare professional?"
+  - pos: 26
+    q: "Have you been diagnosed with auto-immune polyglandular syndrome by a healthcare professional?"
+  - pos: 27
+    q: "Have you been diagnosed with thyroiditis by a healthcare professional?"
+  - pos: 28
+    q: "Have you been diagnosed with thyroid cancer by a healthcare professional?"
+  - pos: 29
+    q: "Have you been diagnosed with insulinoma by a healthcare professional?"
+  - pos: 30
+    q: "Have you been diagnosed with glucagonoma by a healthcare professional?"
+
+  # ---- Treatments and Interventions ----
+  - pos: 31
+    q: "Have you ever used or undergone insulin injections or insulin pump for diabetes?"
+  - pos: 32
+    q: "Have you ever used or undergone metformin or other oral glucose-lowering medication?"
+  - pos: 33
+    q: "Have you ever used or undergone GLP-1 agonist or similar weight management medication (like Ozempic, Wegovy, Mounjaro)?"
+  - pos: 34
+    q: "Have you ever used or undergone thyroid hormone replacement medication (such as levothyroxine, Synthroid)?"
+  - pos: 35
+    q: "Have you ever used or undergone anti-thyroid medication (such as methimazole, propylthiouracil)?"
+  - pos: 36
+    q: "Have you ever used or undergone allopurinol or other uric acid lowering medication for gout?"
+  - pos: 37
+    q: "Have you ever used or undergone testosterone replacement therapy for metabolic or endocrine health?"
+  - pos: 38
+    q: "Have you ever used or undergone radioactive iodine treatment for thyroid disease?"
+  - pos: 39
+    q: "Have you ever used or undergone surgical removal of all or part of your thyroid gland (thyroidectomy)?"
+  - pos: 40
+    q: "Have you ever used or undergone surgical removal of one or more parathyroid glands?"
+  - pos: 41
+    q: "Have you ever used or undergone weight loss (bariatric) surgery (such as gastric sleeve, gastric bypass)?"
+
+  # ---- Weight and Body Composition History ----
+  - pos: 42
+    q: "Has a doctor ever told you that your BMI is in the obese range?"
+  - pos: 43
+    q: "Have you intentionally lost more than 10% of your body weight in the past 12 months?"
+    v: true
+  - pos: 44
+    q: "Have you unintentionally gained more than 10% of your body weight in the past 12 months?"
+  - pos: 45
+    q: "Have you unintentionally lost more than 10% of your body weight in the past 12 months?"
+  - pos: 46
+    q: "Do you experience frequent, significant weight fluctuations (more than 5 pounds) within a week?"
+
+  # ---- Lipid-Related ----
+  - pos: 47
+    q: "Has a healthcare professional told you that your total cholesterol is high?"
+  - pos: 48
+    q: "Has a healthcare professional told you that your LDL cholesterol (bad cholesterol) is high?"
+  - pos: 49
+    q: "Has a healthcare professional told you that your HDL cholesterol (good cholesterol) is low?"
+  - pos: 50
+    q: "Has a healthcare professional told you that your triglycerides are high?"
+  - pos: 51
+    q: "Are you currently taking a statin medication to lower your cholesterol?"
+  - pos: 52
+    q: "Are you currently taking non-statin cholesterol medications (such as ezetimibe, PCSK9 inhibitors)?"
+  - pos: 53
+    q: "Have you been diagnosed with familial hypercholesterolemia (genetic high cholesterol)?"
+
+  # ---- Symptoms ----
+  - pos: 54
+    q: "Do you experience excessive thirst (polydipsia) that is not relieved by drinking fluids?"
+  - pos: 55
+    q: "Do you experience excessive or frequent urination (polyuria), especially waking up multiple times at night?"
+  - pos: 56
+    q: "Do you experience extreme, unexplained hunger (polyphagia) even shortly after eating?"
+  - pos: 57
+    q: "Do you experience unexplained blurry vision that comes and goes?"
+  - pos: 58
+    q: "Do you experience numbness, tingling, or burning pain in your toes or feet (peripheral neuropathy)?"
+  - pos: 59
+    q: "Do you experience slow-healing cuts, scrapes, or bruises (taking more than 2 weeks)?"
+  - pos: 60
+    q: "Do you experience frequent skin infections or slow-healing skin ulcers?"
+  - pos: 61
+    q: "Do you experience patches of dark, velvety skin in your armpits, neck, or groin (acanthosis nigricans)?"
+  - pos: 62
+    q: "Do you experience frequent, unexplained episodes of shakiness, sweating, or anxiety relieved by eating?"
+  - pos: 63
+    q: "Do you experience extreme fatigue or drowsiness immediately after eating meals rich in carbohydrates?"
+  - pos: 64
+    q: "Do you experience unexplained, rapid hair loss or thinning on your scalp?"
+  - pos: 65
+    q: "Do you experience unwanted facial or body hair growth (hirsutism) in women?"
+  - pos: 66
+    q: "Do you experience frequent joint pain, redness, and swelling specifically in your big toe (gout flare)?"
+  - pos: 67
+    q: "Do you experience difficulty losing weight despite consistent calorie restriction and exercise?"
+  - pos: 68
+    q: "Do you experience feeling unusually cold all the time when others are comfortable?"
+  - pos: 69
+    q: "Do you experience feeling unusually hot or sweating excessively when others are comfortable?"
+  - pos: 70
+    q: "Do you experience trembling hands or muscle weakness in your arms or legs?"
+  - pos: 71
+    q: "Do you experience unexplained swelling in the front of your neck (goiter)?"
+  - pos: 72
+    q: "Do you experience dry, itchy, or thickened skin on your elbows or shins?"
+  - pos: 73
+    q: "Do you experience brittle fingernails or toenails that break or split easily?"
+  - pos: 74
+    q: "Do you experience unexplained weight loss in the past 6 months?"
+  - pos: 75
+    q: "Do you experience unexplained weight gain in the past 6 months?"
+  - pos: 76
+    q: "Do you experience unexplained muscle weakness in your thighs?"
+  - pos: 77
+    q: "Do you experience unexplained muscle weakness in your shoulders?"
+  - pos: 78
+    q: "Do you experience unexplained joint stiffness in the fingers?"
+  - pos: 79
+    q: "Do you experience unexplained joint pain in your knees?"
+  - pos: 80
+    q: "Do you experience unexplained skin tags under your arms?"
+  - pos: 81
+    q: "Do you experience unexplained skin tags on your eyelids?"
+  - pos: 82
+    q: "Do you experience dry skin on your face or scalp?"
+  - pos: 83
+    q: "Do you experience dry skin on your hands or feet?"
+  - pos: 84
+    q: "Do you experience brittle hair or nails that split easily?"
+  - pos: 85
+    q: "Do you experience thinning eyebrows, especially the outer third?"
+  - pos: 86
+    q: "Do you experience swelling or puffiness in your face, especially around your eyes?"
+  - pos: 87
+    q: "Do you experience swelling in your hands or fingers?"
+  - pos: 88
+    q: "Do you experience slow digestion or chronic constipation?"
+  - pos: 89
+    q: "Do you experience frequent loose stools or diarrhea?"
+  - pos: 90
+    q: "Do you experience feeling cold even when wrapped in blankets?"
+  - pos: 91
+    q: "Do you experience feeling hot even in a cool room?"
+  - pos: 92
+    q: "Do you experience sweating profusely with minimal exertion?"
+  - pos: 93
+    q: "Do you experience shaky hands or tremors when holding items?"
+  - pos: 94
+    q: "Do you experience difficulty concentrating or thinking clearly (brain fog)?"
+  - pos: 95
+    q: "Do you experience frequent mood changes or irritability?"
+  - pos: 96
+    q: "Do you experience feeling depressed or down without a clear cause?"
+  - pos: 97
+    q: "Do you experience feeling anxious or restless without a clear cause?"
+  - pos: 98
+    q: "Do you experience difficulty falling asleep at night?"
+  - pos: 99
+    q: "Do you experience difficulty staying asleep at night?"
+  - pos: 100
+    q: "Do you experience feeling exhausted even after 8 hours of sleep?"
+  - pos: 101
+    q: "Do you experience waking up with a headache in the morning?"
+  - pos: 102
+    q: "Do you experience unusual sweet cravings after dinner?"
+  - pos: 103
+    q: "Do you experience unusual salt cravings during the day?"
+
+  # ---- Family History ----
+  - pos: 104
+    q: "Do you have a first-degree relative (parent, sibling) diagnosed with Type 2 diabetes?"
+  - pos: 105
+    q: "Do you have a first-degree relative diagnosed with Type 1 diabetes?"
+  - pos: 106
+    q: "Do you have a first-degree relative diagnosed with a thyroid disorder?"
+  - pos: 107
+    q: "Do you have a family history of gestational diabetes?"
+  - pos: 108
+    q: "Do you have a first-degree relative diagnosed with gout?"
+  - pos: 109
+    q: "Do you have a family history of metabolic syndrome or early cardiovascular disease?"
+  - pos: 110
+    q: "Do you have a first-degree relative who underwent weight loss surgery?"
+  - pos: 111
+    q: "Do you have a family history of polycystic ovary syndrome (PCOS)?"
+  - pos: 112
+    q: "Do you have a first-degree relative with non-alcoholic fatty liver disease (NAFLD)?"
+
+  # ---- Self-Monitoring and Labs ----
+  - pos: 113
+    q: "Do you currently use a continuous glucose monitor (CGM)?"
+    v: true
+  - pos: 114
+    q: "Do you use a home finger-stick glucose meter (glucometer)?"
+    v: true
+  - pos: 115
+    q: "Do you check your blood sugar at home at least once per week?"
+    v: true
+  - pos: 116
+    q: "Do you track your daily macronutrient intake (carbs, proteins, fats)?"
+    v: true
+  - pos: 117
+    q: "Do you track or follow a structured fasting protocol (such as intermittent fasting)?"
+    v: true
+  - pos: 118
+    q: "Have you had your HbA1c (average blood sugar) tested by a doctor in the past 12 months?"
+    v: true
+  - pos: 119
+    q: "Have you had a fasting lipid panel (cholesterol test) in the past 12 months?"
+    v: true
+  - pos: 120
+    q: "Have you had your TSH (thyroid-stimulating hormone) tested in the past 12 months?"
+    v: true
+  - pos: 121
+    q: "Have you had your fasting insulin level tested by a doctor?"
+    v: true
+  - pos: 122
+    q: "Have you had your uric acid level tested in a blood panel?"
+    v: true
+  - pos: 123
+    q: "Do you track your body fat percentage regularly using a scale or scan?"
+    v: true
+  - pos: 124
+    q: "Do you track your waist circumference using a tape measure?"
+    v: true
+  - pos: 125
+    q: "Do you log your blood glucose levels in a mobile app?"
+    v: true
+  - pos: 126
+    q: "Do you track your fasting blood glucose daily?"
+    v: true
+  - pos: 127
+    q: "Do you track your fasting blood glucose weekly?"
+    v: true
+  - pos: 128
+    q: "Do you track your post-meal blood glucose levels?"
+    v: true
+  - pos: 129
+    q: "Do you track your bedtime blood glucose levels?"
+    v: true
+  - pos: 130
+    q: "Do you log your daily carbohydrate intake in an app?"
+    v: true
+  - pos: 131
+    q: "Do you log your daily sugar intake in an app?"
+    v: true
+  - pos: 132
+    q: "Do you log your daily fiber intake in an app?"
+    v: true
+  - pos: 133
+    q: "Do you log your daily protein intake in an app?"
+    v: true
+  - pos: 134
+    q: "Do you log your daily fat intake in an app?"
+    v: true
+  - pos: 135
+    q: "Do you log your daily water intake in an app?"
+    v: true
+  - pos: 136
+    q: "Do you measure your waist circumference monthly?"
+    v: true
+  - pos: 137
+    q: "Do you measure your hip circumference monthly?"
+    v: true
+  - pos: 138
+    q: "Do you calculate your waist-to-hip ratio?"
+    v: true
+  - pos: 139
+    q: "Do you track your body weight daily using a smart scale?"
+    v: true
+  - pos: 140
+    q: "Do you track your body weight weekly using a standard scale?"
+    v: true
+  - pos: 141
+    q: "Do you track your body fat percentage weekly?"
+    v: true
+  - pos: 142
+    q: "Do you track your skeletal muscle mass weekly?"
+    v: true
+  - pos: 143
+    q: "Do you track your visceral fat level regularly?"
+    v: true
+  - pos: 144
+    q: "Do you log your continuous glucose monitor (CGM) data in a personal spreadsheet?"
+    v: true
+  - pos: 145
+    q: "Do you share your blood glucose logs with a doctor or dietitian?"
+    v: true
+
+  # ---- Weight and Body Composition History ----
+  - pos: 146
+    q: "Do you follow a ketogenic or very low-carbohydrate diet to manage blood sugar?"
+    v: true
+  - pos: 147
+    q: "Do you follow a low-glycemic index diet?"
+    v: true
+  - pos: 148
+    q: "Do you limit your daily added sugar intake to less than 25 grams?"
+    v: true
+  - pos: 149
+    q: "Do you avoid consuming sugar-sweetened beverages entirely?"
+    v: true
+  - pos: 150
+    q: "Do you eat fiber-rich foods (such as beans, oats, vegetables) with every meal?"
+    v: true
+
+  # ---- Symptoms ----
+  - pos: 151
+    q: "Do you experience a sudden crash in energy 2 to 3 hours after a high-carb meal?"
+  - pos: 152
+    q: "Do you experience sweet cravings daily?"
+
+  # ---- Weight and Body Composition History ----
+  - pos: 153
+    q: "Do you consume artificial sweeteners (such as aspartame, sucralose) daily?"
+  - pos: 154
+    q: "Do you consume natural zero-calorie sweeteners (such as stevia, monk fruit) daily?"
+    v: true
+  - pos: 155
+    q: "Do you drink apple cider vinegar before meals to manage glucose spikes?"
+    v: true
+
+  # ---- Treatments and Interventions ----
+  - pos: 156
+    q: "Do you take a chromium supplement to support insulin sensitivity?"
+    v: true
+  - pos: 157
+    q: "Do you take a berberine supplement for glucose management?"
+    v: true
+  - pos: 158
+    q: "Do you take a alpha-lipoic acid (ALA) supplement?"
+    v: true
+  - pos: 159
+    q: "Do you take a magnesium supplement daily to support metabolic function?"
+    v: true
+  - pos: 160
+    q: "Do you take a vitamin D3 supplement daily?"
+    v: true
+
+  # ---- Diagnosed Conditions ----
+  - pos: 161
+    q: "Have you been diagnosed with vitamin D deficiency?"
+  - pos: 162
+    q: "Have you been diagnosed with vitamin B12 deficiency?"
+
+  # ---- Weight and Body Composition History ----
+  - pos: 163
+    q: "Have you had your liver enzymes (ALT/AST) checked in the past 12 months?"
+    v: true
+  - pos: 164
+    q: "Have you had a liver ultrasound in the past 2 years?"
+
+  # ---- Diagnosed Conditions ----
+  - pos: 165
+    q: "Has a doctor told you that you have elevated liver enzymes (ALT or AST)?"
+  - pos: 166
+    q: "Has a doctor told you that your fasting blood glucose is regularly over 100 mg/dL?"
+  - pos: 167
+    q: "Has a doctor told you that your fasting blood glucose is regularly over 126 mg/dL?"
+  - pos: 168
+    q: "Has a doctor told you that your HbA1c is 5.7% or higher?"
+  - pos: 169
+    q: "Has a doctor told you that your HbA1c is 6.5% or higher?"
+  - pos: 170
+    q: "Has a doctor told you that your blood pressure is regularly over 130/85 (metabolic risk)?"
+  - pos: 171
+    q: "Has a doctor told you that your waist circumference indicates metabolic risk (e.g. >40 inches for men, >35 for women)?"
+
+  # ---- Weight and Body Composition History ----
+  - pos: 172
+    q: "Do you check your blood ketones at home?"
+    v: true
+  - pos: 173
+    q: "Do you check your breath acetone levels?"
+    v: true
+
+  # ---- Symptoms ----
+  - pos: 174
+    q: "Have you ever experienced diabetic ketoacidosis (DKA) requiring hospitalization?"
+  - pos: 175
+    q: "Have you ever experienced a severe hypoglycemic episode (low blood sugar crash) requiring help?"
+
+  # ---- Weight and Body Composition History ----
+  - pos: 176
+    q: "Do you carry fast-acting glucose tablets or gel with you?"
+  - pos: 177
+    q: "Do you wear a medical alert bracelet for diabetes?"
+
+  # ---- Diagnosed Conditions ----
+  - pos: 178
+    q: "Have you ever been diagnosed with gestational preeclampsia during a pregnancy?"
+
+  # ---- Weight and Body Composition History ----
+  - pos: 179
+    q: "Did you give birth to a baby weighing over 9 pounds?"
+
+  # ---- Diagnosed Conditions ----
+  - pos: 180
+    q: "Have you been diagnosed with hyperinsulinemia?"
+
+  # ---- Symptoms ----
+  - pos: 181
+    q: "Do you experience chronic swelling in both of your ankles not related to a heart condition?"
+  - pos: 182
+    q: "Do you experience joint stiffness in the morning that improves with movement?"
+
+  # ---- Diagnosed Conditions ----
+  - pos: 183
+    q: "Has a doctor told you that you have uric acid crystals in your joints?"
+
+  # ---- Weight and Body Composition History ----
+  - pos: 184
+    q: "Do you avoid purine-rich foods (like organ meats, shellfish, beer) to prevent gout?"
+    v: true
+  - pos: 185
+    q: "Have you had a gout flare in the past 12 months?"
+
+  # ---- Symptoms ----
+  - pos: 186
+    q: "Do you experience muscle cramps or spasms regularly?"
+  - pos: 187
+    q: "Do you experience persistent dry mouth (double check hydration)?"
+  - pos: 188
+    q: "Do you experience dry eyes that require lubricating eye drops?"
+  - pos: 189
+    q: "Do you experience skin tags on your neck or armpits?"
+
+  # ---- Diagnosed Conditions ----
+  - pos: 190
+    q: "Have you been diagnosed with seborrheic dermatitis (flaky skin on scalp/face)?"
+
+  # ---- Symptoms ----
+  - pos: 191
+    q: "Do you experience brittle hair that breaks easily?"
+  - pos: 192
+    q: "Do you experience voice changes or hoarseness (common in thyroid issues)?"
+  - pos: 193
+    q: "Do you experience difficulty swallowing or a tight feeling in your throat?"
+
+  # ---- Weight and Body Composition History ----
+  - pos: 194
+    q: "Have you had your thyroid scanned by ultrasound?"
+  - pos: 195
+    q: "Have you had a thyroid biopsy?"
+  - pos: 196
+    q: "Do you take thyroid hormone replacement specifically on an empty stomach in the morning?"
+    v: true
+
+  # ---- Treatments and Interventions ----
+  - pos: 197
+    q: "Do you take calcium or iron supplements within 4 hours of your thyroid medication?"
+
+  # ---- Symptoms ----
+  - pos: 198
+    q: "Have you experienced hair loss after starting thyroid medication?"
+  - pos: 199
+    q: "Do you experience palpitations or anxiety that you feel may be related to thyroid levels?"
+
+  # ---- Weight and Body Composition History ----
+  - pos: 200
+    q: "Have you had your cortisol levels tested in blood, saliva, or urine?"
+    v: true
+  - pos: 201
+    q: "Have you had an ACTH stimulation test?"
+  - pos: 202
+    q: "Have you had your aldosterone or renin levels tested?"
+    v: true
+  - pos: 203
+    q: "Have you had your parathyroid hormone (PTH) levels tested?"
+    v: true
+  - pos: 204
+    q: "Have you had your calcium levels in blood tested in the past 12 months?"
+    v: true
+
+  # ---- Diagnosed Conditions ----
+  - pos: 205
+    q: "Has a doctor told you that your blood calcium levels are high?"
+  - pos: 206
+    q: "Has a doctor told you that your blood calcium levels are low?"
+  - pos: 207
+    q: "Have you been diagnosed with osteopenia due to an endocrine condition?"
+
+  # ---- Symptoms ----
+  - pos: 208
+    q: "Do you experience recurrent kidney stones?"
+  - pos: 209
+    q: "Do you experience chronic bone pain or joint aches?"
+  - pos: 210
+    q: "Do you experience abdominal pain or frequent constipation?"
+
+  # ---- Weight and Body Composition History ----
+  - pos: 211
+    q: "Have you had your growth hormone (GH) or IGF-1 levels tested?"
+    v: true
+
+  # ---- Symptoms ----
+  - pos: 212
+    q: "Do you experience a tingling sensation in your hands (carpal tunnel symptoms)?"
+  - pos: 213
+    q: "Do you experience a change in shoe or ring size in adulthood?"
+
+  # ---- Diagnosed Conditions ----
+  - pos: 214
+    q: "Have you been diagnosed with a pituitary adenoma (benign tumor)?"
+
+  # ---- Weight and Body Composition History ----
+  - pos: 215
+    q: "Have you undergone radiation therapy to your head or neck?"
+  - pos: 216
+    q: "Have you had surgery on your pituitary gland?"
+  - pos: 217
+    q: "Do you take prescription medication to lower your prolactin levels?"
+
+  # ---- Diagnosed Conditions ----
+  - pos: 218
+    q: "Have you been diagnosed with hyperprolactinemia?"
+
+  # ---- Symptoms ----
+  - pos: 219
+    q: "Do you experience irregular menstrual cycles (fewer than 9 periods per year)?"
+  - pos: 220
+    q: "Do you experience cycles that are consistently longer than 35 days?"
+
+  # ---- Weight and Body Composition History ----
+  - pos: 221
+    q: "Have you had an ultrasound showing polycystic ovaries?"
+  - pos: 222
+    q: "Have you had blood tests showing elevated androgen (male hormone) levels?"
+    v: true
+
+  # ---- Symptoms ----
+  - pos: 223
+    q: "Do you experience severe acne that does not respond to topical treatments?"
+  - pos: 224
+    q: "Do you experience thinning hair on the crown of your head (male-pattern hair loss)?"
+  - pos: 225
+    q: "Have you experienced difficulty conceiving for more than 12 months?"
+
+  # ---- Weight and Body Composition History ----
+  - pos: 226
+    q: "Have you used fertility medications (such as clomiphene, letrozole)?"
+  - pos: 227
+    q: "Do you follow a low-carb, high-protein diet specifically for PCOS management?"
+    v: true
+
+  # ---- Treatments and Interventions ----
+  - pos: 228
+    q: "Do you take a myo-inositol supplement to support insulin sensitivity?"
+    v: true
+  - pos: 229
+    q: "Do you take a spearmint tea or supplement daily to manage androgen levels?"
+    v: true
+
+  # ---- Symptoms ----
+  - pos: 230
+    q: "Do you experience a sensation of brain fog or lack of concentration?"
+  - pos: 231
+    q: "Do you experience mood swings or irritability related to blood sugar crashes?"
+  - pos: 232
+    q: "Do you experience a cold sweat or clammy skin when you miss a meal?"
+
+  # ---- Weight and Body Composition History ----
+  - pos: 233
+    q: "Do you carry a snack (such as a bar or fruit) with you at all times?"
+  - pos: 234
+    q: "Do you eat a high-protein breakfast within 1 hour of waking up?"
+    v: true
+  - pos: 235
+    q: "Do you avoid eating any food within 3 hours of going to bed?"
+    v: true
+
+  # ---- Treatments and Interventions ----
+  - pos: 236
+    q: "Do you engage in resistance training specifically to improve insulin sensitivity?"
+    v: true
+
+  # ---- Weight and Body Composition History ----
+  - pos: 237
+    q: "Do you perform a 10-minute walk after meals to help manage glucose spikes?"
+    v: true
+  - pos: 238
+    q: "Do you monitor your glucose levels after eating specific foods to identify triggers?"
+    v: true
+  - pos: 239
+    q: "Do you track your daily step count to support your metabolic health?"
+    v: true
+  - pos: 240
+    q: "Do you sleep at least 7-8 hours per night to support metabolic recovery?"
+    v: true
+  - pos: 241
+    q: "Have you had your fasting glucose tested in the past 12 months?"
+    v: true
+  - pos: 242
+    q: "Have you had a HbA1c test in the past 6 months?"
+    v: true
+
+  # ---- Treatments and Interventions ----
+  - pos: 243
+    q: "Do you take a berberine or metformin supplement with meals?"
+    v: true
+
+  # ---- Weight and Body Composition History ----
+  - pos: 244
+    q: "Have you discussed your metabolic risk factors with a doctor in the past year?"
+    v: true
+  - pos: 245
+    q: "Do you feel empowered and in control of your metabolic health?"
+    v: true
+
+  # ---- Self-Monitoring ----
+  - pos: 246
+    q: "Do you track your daily resting statistics related to metabolic health?"
+    v: true
+  - pos: 247
+    q: "Do you feel that your metabolic health has improved over the past 12 months?"
+    v: true
+  - pos: 248
+    q: "Do you log your metabolic symptoms weekly in a journal or app?"
+    v: true
+  - pos: 249
+    q: "Have you discussed your metabolic health goals with a specialist?"
+    v: true
+  - pos: 250
+    q: "Do you wear a device that tracks metrics relevant to your metabolic recovery?"
+    v: true
+  - pos: 251
+    q: "Do you avoid environmental triggers that worsen your metabolic symptoms?"
+    v: true
+  - pos: 252
+    q: "Do you feel that your sleep quality directly impacts your metabolic health?"
+    v: true
+  - pos: 253
+    q: "Do you research new research or updates regarding metabolic wellness?"
+    v: true
+  - pos: 254
+    q: "Do you feel confident managing your metabolic health at home?"
+    v: true
+  - pos: 255
+    q: "Have you had a comprehensive physical exam in the past 12 months?"
+    v: true
