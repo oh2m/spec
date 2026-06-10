@@ -64,7 +64,9 @@ Every Layer 2 block starts with a **manifest** — a 64 hex character / 256-bit 
 
 Every chunk declares a **mask** — a 64 hex character / 256-bit field indicating which of the 255 question slots are being answered. A masked-out slot is ignored entirely regardless of its bit value. This resolves the difference between a genuine "no" answer and an unanswered question.
 
-Every field in Layer 2 is **256 bits / 64 hex characters**, position 0 always reserved. One rule, applied everywhere. Inspired by IPv4.
+Every field in Layer 2 is **256 bits / 64 hex characters**, position 0 always reserved. One rule, applied everywhere. Inspired by IPv4. Questions are numbered 1–255, with Question N stored exactly at bit position N. Position 0 is reserved.
+
+Question definitions may include a V flag indicating storage inversion; this lets question authors keep natural question phrasing while controlling bit polarity. See spec Section 4.8 for details.
 
 ### Patterns 1–16 — OH2M Open Reference
 Community-ratified questions covering health and fitness. **Any reader with this spec can decode them.** 16 patterns × 255 bits = 4,080 open questions across:
