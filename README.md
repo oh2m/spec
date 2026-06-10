@@ -93,6 +93,9 @@ Community-ratified questions covering health and fitness. **Any reader with this
 ### Patterns 17–255 — Implementer Defined
 Garmin, Fitbit, hospitals, anyone. Use any question set you want. Publish it openly, version it monthly, or keep it private. OH2M takes no position. The standard carries the bits.
 
+### Beyond Static Questions (Appendix A)
+The static-question contract used by the open reference patterns (1–16) is just one application of the OH2M architecture. Implementer-defined patterns (17–255) are free to use the full 256-bit capacity for alternative encodings—such as cryptographic hashes, decision trees, timelines, or any dynamic schema the implementer publishes. For details and worked examples, see [Appendix A of the specification](./spec/OH2M-Specification-v0.1.1.md).
+
 ---
 
 ## For Implementers
