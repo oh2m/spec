@@ -437,13 +437,20 @@ export function sha256(str) {
 
   const bitLen = len * 8;
   words[bitLen >> 5] |= 0x80 << (24 - (bitLen % 32));
-  
-  const targetWordCount = ((bitLen + 64) >> 9 << 4) + 15;
-  while (words.length < targetWordCount) {
+
+  // Standard SHA-256 length padding (fixed 2026-06-10): the 64-bit message
+  // length occupies the LAST TWO WORDS of the final 512-bit block. The old
+  // code pushed the length past the block boundary, creating a bogus extra
+  // compression block — and `bitLen >>> 32` is a no-op in JS (shift counts
+  // wrap mod 32), so the high word was wrong as well. Result: digests that
+  // matched no real SHA-256 implementation. Verified against node:crypto
+  // on standard test vectors after this fix.
+  const lastIndex = ((bitLen + 64) >> 9 << 4) + 15;
+  while (words.length <= lastIndex) {
     words.push(0);
   }
-  words.push(bitLen >>> 32);
-  words.push(bitLen & 0xffffffff);
+  words[lastIndex - 1] = Math.floor(bitLen / 0x100000000);
+  words[lastIndex] = bitLen & 0xffffffff;
 
   const w = new Array(64);
   for (let chunkStart = 0; chunkStart < words.length; chunkStart += 16) {

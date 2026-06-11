@@ -36,8 +36,11 @@ export default function FileGenerator() {
   ]);
 
   // Layer 3 State (extensible line list of structured objects)
+  // The sha256 value starts empty and is auto-filled by the payload-sync
+  // effect below — a hardcoded constant can never be correct here because
+  // the default Layer 1 includes today's date (fixed 2026-06-10).
   const [l3Lines, setL3Lines] = useState([
-    { id: "1", type: "hash", key: "sha256", value: "4ac85958e5326ff09f65d698e727faec402f2e4f7408722635528589ae25a8aa" }
+    { id: "1", type: "hash", key: "sha256", value: "" }
   ]);
   const [includeL3, setIncludeL3] = useState(true);
 
@@ -69,6 +72,42 @@ export default function FileGenerator() {
 
     return generateOH2M(combinedL1, chunks, layer3, endianness);
   }, [l1Data, customL1Fields, chunks, l3Lines, includeL3, endianness]);
+
+  // Hash of the Layer 1+2 payload (the file WITHOUT Layer 3, up to but not
+  // including the ---oh2m-end--- line — same boundary the validator uses).
+  // Depends only on payload inputs, never on l3Lines, so syncing the hash
+  // into l3Lines below cannot loop.
+  const payloadHash = useMemo(() => {
+    const combinedL1 = { ...l1Data };
+    customL1Fields.forEach(f => {
+      if (f.key.trim()) {
+        combinedL1[f.key.trim()] = f.value;
+      }
+    });
+    const fileWithoutL3 = generateOH2M(combinedL1, chunks, [], endianness);
+    const lines = fileWithoutL3.split(/\r?\n/);
+    const endIdx = lines.findIndex(l => l.trim() === "---oh2m-end---");
+    const payload = endIdx !== -1 ? lines.slice(0, endIdx).join("\n") + "\n" : fileWithoutL3;
+    return sha256(payload.replace(/\r\n/g, "\n"));
+  }, [l1Data, customL1Fields, chunks, endianness]);
+
+  // Keep sha256 hash lines in sync with the payload automatically, so the
+  // generated file always carries a verifiable integrity hash (added
+  // 2026-06-10; previously a stale hardcoded hash shipped in every file
+  // until the user clicked Recalculate).
+  useEffect(() => {
+    setL3Lines(prev => {
+      let changed = false;
+      const next = prev.map(line => {
+        if (line.type === "hash" && line.key === "sha256" && line.value !== payloadHash) {
+          changed = true;
+          return { ...line, value: payloadHash };
+        }
+        return line;
+      });
+      return changed ? next : prev;
+    });
+  }, [payloadHash]);
 
   // Handle Layer 1 Input Changes
   const handleL1Change = (e) => {
